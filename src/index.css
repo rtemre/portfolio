@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Primary Colors */
+  --color-primary: #1a1a1a; /* sophisticated-black */
+  --color-secondary: #4a5568; /* gray-600 */
+  --color-accent: #3182ce; /* blue-600 */
+
+  /* Background Colors */
+  --color-background: #ffffff; /* white */
+  --color-surface: #f7fafc; /* gray-50 */
+
+  /* Text Colors */
+  --color-text-primary: #2d3748; /* gray-800 */
+  --color-text-secondary: #718096; /* gray-500 */
+
+  /* Status Colors */
+  --color-success: #38a169; /* green-600 */
+  --color-warning: #d69e2e; /* yellow-600 */
+  --color-error: #e53e3e; /* red-600 */
+
+  /* Shadow Variables */
+  --shadow-soft: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  --shadow-medium: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+
+  /* Animation Variables */
+  --transition-smooth: 300ms ease-out;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: "Inter", sans-serif;
+    color: var(--color-text-primary);
+    background-color: var(--color-background);
+    line-height: 1.6;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Playfair Display", serif;
+    color: var(--color-primary);
+    line-height: 1.2;
+  }
+
+  code,
+  pre {
+    font-family: "JetBrains Mono", monospace;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-accent text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 hover:shadow-lg hover:scale-105 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-opacity-50;
+  }
+
+  .btn-secondary {
+    @apply bg-surface text-primary border border-secondary px-6 py-3 rounded-lg font-semibold transition-all duration-300 hover:bg-secondary hover:text-white focus:outline-none focus:ring-2 focus:ring-secondary focus:ring-opacity-50;
+  }
+
+  .card {
+    @apply bg-white rounded-lg shadow-soft transition-all duration-300 hover:shadow-medium;
+  }
+
+  .form-input {
+    @apply w-full px-4 py-3 border border-secondary rounded-lg focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent transition-all duration-300;
+  }
+
+  .text-gradient {
+    @apply bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent;
+  }
+}
+
+@layer utilities {
+  .transition-smooth {
+    transition: var(--transition-smooth);
+  }
+
+  .shadow-soft {
+    box-shadow: var(--shadow-soft);
+  }
+
+  .shadow-medium {
+    box-shadow: var(--shadow-medium);
+  }
+}

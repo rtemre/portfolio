@@ -1,0 +1,24 @@
+{
+  "name": "portfolio_reimagined",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "dependencies": {
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "react-router-dom": "^7.8.2"
+  },
+  "scripts": {
+    "build": "vite build",
+    "start": "vite",
+    "dev": "vite --host",
+    "preview": "vite preview"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5.0.2",
+    "tailwindcss": "^3.4.17",
+    "vite": "^7.1.4"
+  }
+}
