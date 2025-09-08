@@ -37,7 +37,7 @@ function Nav() {
         isScrolled ? "shadow-medium" : ""
       }`}
     >
-      <div className="max-w-7xl mx-auto px-6 py-4">
+      <div className="max-w-7xl mx-auto p-6">
         <div className="flex items-center justify-between">
           <Link
             to="/"
