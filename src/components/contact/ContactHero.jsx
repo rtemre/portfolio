@@ -1,0 +1,35 @@
+import React from "react";
+
+function ContactHero() {
+  return (
+    <section className="relative pt-32 pb-20 bg-gradient-to-br from-primary to-primary/80 text-white overflow-hidden">
+      <div className="absolute inset-0 opacity-10">
+        <img
+          src="https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3"
+          alt="Contact us"
+          className="w-full h-full object-cover"
+          loading="lazy"
+          onError={(e) => {
+            e.target.src =
+              "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2";
+            e.target.onError = null;
+          }}
+        />
+      </div>
+
+      <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
+        <h1 className="text-hero font-playfair mb-6 animate-fade-in text-white">
+          Let's Create Something{" "}
+          <span className="text-accent">Extraordinary</span>
+        </h1>
+        <p className="text-xl mb-8 max-w-2xl mx-auto opacity-90 animate-slide-up">
+          Ready to transform your vision into reality? Let's discuss your
+          project and explore how we can work together to achieve exceptional
+          results.
+        </p>
+      </div>
+    </section>
+  );
+}
+
+export default ContactHero;
