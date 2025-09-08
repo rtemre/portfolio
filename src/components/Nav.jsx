@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
+import { HamburgerIcon, ChevronDownIcon } from "../assets/icons";
 
 function Nav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -134,19 +135,7 @@ function Nav() {
             className="md:hidden p-2 text-primary hover:text-accent transition-colors duration-300"
             onClick={() => setIsOpen(!isOpen)}
           >
-            <svg
-              className="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M4 6h16M4 12h16M4 18h16"
-              />
-            </svg>
+            <HamburgerIcon />
           </button>
         </div>
 
