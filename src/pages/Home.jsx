@@ -10,6 +10,7 @@ function Home() {
     const timer = setInterval(() => {
       setCountdown((prev) => {
         if (prev <= 1) {
+          navigate("/home");
           clearInterval(timer);
           return 0;
         }
