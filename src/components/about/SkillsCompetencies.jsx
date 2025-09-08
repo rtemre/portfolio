@@ -1,6 +1,79 @@
 import React from "react";
 import AnimatedProgressBar from "../AnimatedProgressBar";
 
+const technicalSkills = [
+  {
+    id: 1,
+    title: "UX Research & Strategy",
+    percentage: 95,
+    color: "accent",
+    delay: 0,
+    description:
+      "User interviews, usability testing, journey mapping, persona development",
+  },
+  {
+    id: 2,
+    title: "UI Design & Prototyping",
+    percentage: 92,
+    color: "success",
+    delay: 200,
+    description: "Figma, Sketch, Adobe Creative Suite, interactive prototyping",
+  },
+  {
+    id: 3,
+    title: "Frontend Development",
+    percentage: 88,
+    color: "warning",
+    delay: 400,
+    description: "HTML, CSS, JavaScript, React basics, responsive design",
+  },
+  {
+    id: 4,
+    title: "Design Systems",
+    percentage: 90,
+    color: "accent",
+    delay: 600,
+    description:
+      "Component libraries, style guides, design tokens, documentation",
+  },
+];
+
+const softSkills = [
+  {
+    id: 1,
+    title: "Communication & Presentation",
+    percentage: 96,
+    color: "success",
+    delay: 800,
+    description:
+      "Stakeholder management, design storytelling, workshop facilitation",
+  },
+  {
+    id: 2,
+    title: "Strategic Problem Solving",
+    percentage: 94,
+    color: "accent",
+    delay: 1000,
+    description: "Systems thinking, constraint navigation, creative ideation",
+  },
+  {
+    id: 3,
+    title: "Cross-functional Collaboration",
+    percentage: 93,
+    color: "warning",
+    delay: 1200,
+    description:
+      "Agile methodologies, developer handoff, product strategy alignment",
+  },
+  {
+    id: 4,
+    title: "Mentorship & Leadership",
+    percentage: 89,
+    color: "success",
+    delay: 1400,
+    description: "Junior designer guidance, design critique, knowledge sharing",
+  },
+];
 function SkillsCompetencies() {
   return (
     <section className="py-20 bg-surface">
@@ -22,79 +95,26 @@ function SkillsCompetencies() {
               Technical Skills
             </h3>
             <div className="space-y-6">
-              {/* UX Research & Strategy */}
-              <div>
-                <div className="flex justify-between items-center mb-2">
-                  <span className="font-medium text-primary">
-                    UX Research & Strategy
-                  </span>
-                  <span className="text-sm text-accent">95%</span>
+              {technicalSkills.map((skill) => (
+                <div key={skill.id}>
+                  <div className="flex justify-between items-center mb-2">
+                    <span className="font-medium text-primary">
+                      {skill.title}
+                    </span>
+                    <span className={`text-sm text-${skill.color}`}>
+                      {skill.percentage}%
+                    </span>
+                  </div>
+                  <AnimatedProgressBar
+                    percentage={skill.percentage}
+                    color={`bg-${skill.color}`}
+                    delay={skill.delay}
+                  />
+                  <p className="text-sm text-secondary mt-1">
+                    {skill.description}
+                  </p>
                 </div>
-                <AnimatedProgressBar
-                  percentage={95}
-                  color="bg-accent"
-                  delay={0}
-                />
-                <p className="text-sm text-secondary mt-1">
-                  User interviews, usability testing, journey mapping, persona
-                  development
-                </p>
-              </div>
-
-              {/* UI Design & Prototyping */}
-              <div>
-                <div className="flex justify-between items-center mb-2">
-                  <span className="font-medium text-primary">
-                    UI Design & Prototyping
-                  </span>
-                  <span className="text-sm text-success">92%</span>
-                </div>
-                <AnimatedProgressBar
-                  percentage={92}
-                  color="bg-success"
-                  delay={200}
-                />
-                <p className="text-sm text-secondary mt-1">
-                  Figma, Sketch, Adobe Creative Suite, interactive prototyping
-                </p>
-              </div>
-
-              {/* Frontend Development */}
-              <div>
-                <div className="flex justify-between items-center mb-2">
-                  <span className="font-medium text-primary">
-                    Frontend Development
-                  </span>
-                  <span className="text-sm text-warning">88%</span>
-                </div>
-                <AnimatedProgressBar
-                  percentage={88}
-                  color="bg-warning"
-                  delay={400}
-                />
-                <p className="text-sm text-secondary mt-1">
-                  HTML, CSS, JavaScript, React basics, responsive design
-                </p>
-              </div>
-
-              {/* Design Systems */}
-              <div>
-                <div className="flex justify-between items-center mb-2">
-                  <span className="font-medium text-primary">
-                    Design Systems
-                  </span>
-                  <span className="text-sm text-accent">90%</span>
-                </div>
-                <AnimatedProgressBar
-                  percentage={90}
-                  color="bg-accent"
-                  delay={600}
-                />
-                <p className="text-sm text-secondary mt-1">
-                  Component libraries, style guides, design tokens,
-                  documentation
-                </p>
-              </div>
+              ))}
             </div>
           </div>
 
@@ -104,79 +124,26 @@ function SkillsCompetencies() {
               Soft Skills
             </h3>
             <div className="space-y-6">
-              {/* Communication */}
-              <div>
-                <div className="flex justify-between items-center mb-2">
-                  <span className="font-medium text-primary">
-                    Communication & Presentation
-                  </span>
-                  <span className="text-sm text-success">96%</span>
+              {softSkills.map((skill) => (
+                <div key={skill.id}>
+                  <div className="flex justify-between items-center mb-2">
+                    <span className="font-medium text-primary">
+                      {skill.title}
+                    </span>
+                    <span className={`text-sm text-${skill.color}`}>
+                      {skill.percentage}%
+                    </span>
+                  </div>
+                  <AnimatedProgressBar
+                    percentage={skill.percentage}
+                    color={`bg-${skill.color}`}
+                    delay={skill.delay}
+                  />
+                  <p className="text-sm text-secondary mt-1">
+                    {skill.description}
+                  </p>
                 </div>
-                <AnimatedProgressBar
-                  percentage={96}
-                  color="bg-success"
-                  delay={800}
-                />
-                <p className="text-sm text-secondary mt-1">
-                  Stakeholder management, design storytelling, workshop
-                  facilitation
-                </p>
-              </div>
-
-              {/* Problem Solving */}
-              <div>
-                <div className="flex justify-between items-center mb-2">
-                  <span className="font-medium text-primary">
-                    Strategic Problem Solving
-                  </span>
-                  <span className="text-sm text-accent">94%</span>
-                </div>
-                <AnimatedProgressBar
-                  percentage={94}
-                  color="bg-accent"
-                  delay={1000}
-                />
-                <p className="text-sm text-secondary mt-1">
-                  Systems thinking, constraint navigation, creative ideation
-                </p>
-              </div>
-
-              {/* Collaboration */}
-              <div>
-                <div className="flex justify-between items-center mb-2">
-                  <span className="font-medium text-primary">
-                    Cross-functional Collaboration
-                  </span>
-                  <span className="text-sm text-warning">93%</span>
-                </div>
-                <AnimatedProgressBar
-                  percentage={93}
-                  color="bg-warning"
-                  delay={1200}
-                />
-                <p className="text-sm text-secondary mt-1">
-                  Agile methodologies, developer handoff, product strategy
-                  alignment
-                </p>
-              </div>
-
-              {/* Mentorship */}
-              <div>
-                <div className="flex justify-between items-center mb-2">
-                  <span className="font-medium text-primary">
-                    Mentorship & Leadership
-                  </span>
-                  <span className="text-sm text-success">89%</span>
-                </div>
-                <AnimatedProgressBar
-                  percentage={89}
-                  color="bg-success"
-                  delay={1400}
-                />
-                <p className="text-sm text-secondary mt-1">
-                  Junior designer guidance, design critique, knowledge sharing
-                </p>
-              </div>
+              ))}
             </div>
           </div>
         </div>
