@@ -1,47 +1,5 @@
 import React from "react";
-import ChartBarIcon from "../../assets/svgs/chart-bar";
-import UxUiDesignIcon from "../../assets/svgs/ux-ui-design";
-import FrontendDevelopmentIcon from "../../assets/svgs/frontend-development";
-import CollaborativeIcon from "../../assets/svgs/collaborative";
-
-const tools = [
-  {
-    id: 1,
-    icon: ChartBarIcon,
-    bgColor: "bg-accent/10",
-    iconColor: "text-accent",
-    iconSize: "w-8 h-8",
-    title: "Research & Strategy",
-    tools: ["Google Analytics", "Hotjar", "Miro", "Notion"],
-  },
-  {
-    id: 2,
-    icon: UxUiDesignIcon,
-    bgColor: "bg-success/10",
-    iconColor: "text-success",
-    iconSize: "w-8 h-8",
-    title: "Design",
-    tools: ["Figma", "Adobe Creative Suite", "Principle", "InVision"],
-  },
-  {
-    id: 3,
-    icon: FrontendDevelopmentIcon,
-    bgColor: "bg-warning/10",
-    iconColor: "text-warning",
-    iconSize: "w-8 h-8",
-    title: "Development",
-    tools: ["VS Code", "Git & GitHub", "Netlify", "Vercel"],
-  },
-  {
-    id: 4,
-    icon: CollaborativeIcon,
-    bgColor: "bg-error/10",
-    iconColor: "text-error",
-    iconSize: "w-6 h-6",
-    title: "Collaboration",
-    tools: ["Slack", "Zoom", "Loom", "Calendly"],
-  },
-];
+import { tools } from "./constants";
 function ToolsTechnologies() {
   return (
     <section className="py-20 bg-white">

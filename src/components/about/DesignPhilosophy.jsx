@@ -1,37 +1,5 @@
 import React from "react";
-import HumanCenteredIcon from "../../assets/svgs/human-centered";
-import CollaborativeIcon from "../../assets/svgs/collaborative";
-import SystematicIcon from "../../assets/svgs/systematic";
-
-const philosophyItems = [
-  {
-    id: 1,
-    icon: HumanCenteredIcon,
-    bgColor: "bg-accent/10",
-    iconColor: "text-accent",
-    title: "Human-Centered",
-    description:
-      "Every design decision starts with understanding user needs, behaviors, and pain points. Research informs aesthetics, not the other way around.",
-  },
-  {
-    id: 2,
-    icon: CollaborativeIcon,
-    bgColor: "bg-success/10",
-    iconColor: "text-success",
-    title: "Collaborative",
-    description:
-      "Great design emerges from diverse perspectives. I believe in co-creation with stakeholders, developers, and users throughout the process.",
-  },
-  {
-    id: 3,
-    icon: SystematicIcon,
-    bgColor: "bg-warning/10",
-    iconColor: "text-warning",
-    title: "Systematic",
-    description:
-      "Scalable design systems ensure consistency while allowing for creative expression. Structure enables innovation, not restricts it.",
-  },
-];
+import { philosophyItems } from "./constants";
 function DesignPhilosophy() {
   return (
     <section className="py-20 bg-white">

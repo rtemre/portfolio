@@ -1,37 +1,5 @@
 import React from "react";
-import GraduationCapIcon from "../../assets/svgs/graduation-cap";
-import CheckCircleIcon from "../../assets/svgs/check-circle";
-import BookOpenIcon from "../../assets/svgs/book-open";
-
-const educationItems = [
-  {
-    id: 1,
-    icon: GraduationCapIcon,
-    bgColor: "bg-accent/10",
-    iconColor: "text-accent",
-    title: "Psychology & Design",
-    institution: "University of Design Excellence",
-    details: "Bachelor's Degree • 2014-2018",
-  },
-  {
-    id: 2,
-    icon: CheckCircleIcon,
-    bgColor: "bg-success/10",
-    iconColor: "text-success",
-    title: "Certified Usability Analyst",
-    institution: "Human Factors International",
-    details: "CUA Certification • 2020",
-  },
-  {
-    id: 3,
-    icon: BookOpenIcon,
-    bgColor: "bg-warning/10",
-    iconColor: "text-warning",
-    title: "Advanced UX Research",
-    institution: "Interaction Design Foundation",
-    details: "Professional Certificate • 2022",
-  },
-];
+import { educationItems } from "./constants";
 function EducationCertifications() {
   return (
     <section className="py-20 bg-white">
