@@ -10,7 +10,7 @@ function Home() {
       setCountdown((prev) => {
         if (prev <= 1) {
           clearInterval(timer);
-          navigate("/homepage");
+          navigate("/home");
           return 0;
         }
         return prev - 1;
@@ -20,7 +20,7 @@ function Home() {
   }, [navigate]);
 
   const handleClick = () => {
-    navigate("/homepage");
+    navigate("/home");
   };
 
   return (

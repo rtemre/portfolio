@@ -16,6 +16,9 @@ function Nav() {
   }, []);
 
   const isActive = (path) => {
+    if (path === "/") {
+      return location.pathname === "/" || location.pathname === "/home";
+    }
     return location.pathname === path;
   };
 
