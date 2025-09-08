@@ -1,6 +1,4 @@
 import React from "react";
-import Nav from "../components/Nav";
-import Footer from "../components/Footer";
 import {
   BlogHero,
   BlogCategoryFilter,
@@ -10,16 +8,12 @@ import {
 
 function Blog() {
   return (
-    <div className="bg-background text-text-primary">
-      <Nav />
-      <main className="pt-20">
-        <BlogHero />
-        <BlogCategoryFilter />
-        <BlogFeaturedPost />
-        <BlogRecentArticles />
-      </main>
-      <Footer />
-    </div>
+    <>
+      <BlogHero />
+      <BlogCategoryFilter />
+      <BlogFeaturedPost />
+      <BlogRecentArticles />
+    </>
   );
 }
 
