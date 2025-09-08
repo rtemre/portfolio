@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import ArrowRightIcon from "../assets/svgs/arrow-right";
 
 function Home() {
   const [countdown, setCountdown] = useState(5);
@@ -10,14 +11,13 @@ function Home() {
       setCountdown((prev) => {
         if (prev <= 1) {
           clearInterval(timer);
-          navigate("/home");
           return 0;
         }
         return prev - 1;
       });
     }, 1000);
     return () => clearInterval(timer);
-  }, [navigate]);
+  }, []);
 
   const handleClick = () => {
     navigate("/home");
@@ -44,19 +44,7 @@ function Home() {
                 className="btn-primary inline-flex items-center space-x-2"
               >
                 <span>Enter Portfolio</span>
-                <svg
-                  className="w-5 h-5"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M13 7l5 5m0 0l-5 5m5-5H6"
-                  />
-                </svg>
+                <ArrowRightIcon className="w-5 h-5" />
               </button>
             </div>
             <p className="text-caption text-text-secondary">

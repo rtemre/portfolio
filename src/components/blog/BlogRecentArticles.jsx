@@ -1,4 +1,5 @@
 import React from "react";
+import ArrowRightIcon from "../../assets/svgs/arrow-right";
 
 function BlogRecentArticles() {
   return (
@@ -55,19 +56,7 @@ function BlogRecentArticles() {
                 <span className="text-sm text-secondary">6 min read</span>
                 <div className="flex items-center text-accent font-medium">
                   Read More
-                  <svg
-                    className="w-4 h-4 ml-2 transition-transform duration-300 group-hover:translate-x-1"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M9 5l7 7-7 7"
-                    />
-                  </svg>
+                  <ArrowRightIcon className="w-4 h-4 ml-2 transition-transform duration-300 group-hover:translate-x-1" />
                 </div>
               </div>
             </div>
@@ -111,19 +100,7 @@ function BlogRecentArticles() {
                 <span className="text-sm text-secondary">12 min read</span>
                 <div className="flex items-center text-accent font-medium">
                   Read More
-                  <svg
-                    className="w-4 h-4 ml-2 transition-transform duration-300 group-hover:translate-x-1"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M9 5l7 7-7 7"
-                    />
-                  </svg>
+                  <ArrowRightIcon className="w-4 h-4 ml-2 transition-transform duration-300 group-hover:translate-x-1" />
                 </div>
               </div>
             </div>
@@ -166,19 +143,7 @@ function BlogRecentArticles() {
                 <span className="text-sm text-secondary">15 min read</span>
                 <div className="flex items-center text-accent font-medium">
                   Read More
-                  <svg
-                    className="w-4 h-4 ml-2 transition-transform duration-300 group-hover:translate-x-1"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M9 5l7 7-7 7"
-                    />
-                  </svg>
+                  <ArrowRightIcon className="w-4 h-4 ml-2 transition-transform duration-300 group-hover:translate-x-1" />
                 </div>
               </div>
             </div>

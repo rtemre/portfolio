@@ -1,4 +1,8 @@
 import React from "react";
+import ChartBarIcon from "../../assets/svgs/chart-bar";
+import UxUiDesignIcon from "../../assets/svgs/ux-ui-design";
+import FrontendDevelopmentIcon from "../../assets/svgs/frontend-development";
+import CollaborativeIcon from "../../assets/svgs/collaborative";
 
 function ToolsTechnologies() {
   return (
@@ -19,19 +23,7 @@ function ToolsTechnologies() {
           {/* Research & Strategy */}
           <div className="text-center">
             <div className="w-16 h-16 mx-auto mb-4 bg-accent/10 rounded-full flex items-center justify-center">
-              <svg
-                className="w-8 h-8 text-accent"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
-                />
-              </svg>
+              <ChartBarIcon className="w-8 h-8 text-accent" />
             </div>
             <h3 className="font-playfair text-lg font-semibold mb-3 text-primary">
               Research & Strategy
@@ -47,19 +39,7 @@ function ToolsTechnologies() {
           {/* Design */}
           <div className="text-center">
             <div className="w-16 h-16 mx-auto mb-4 bg-success/10 rounded-full flex items-center justify-center">
-              <svg
-                className="w-8 h-8 text-success"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zM21 5a2 2 0 00-2-2h-4a2 2 0 00-2 2v6a2 2 0 002 2h4a2 2 0 002-2V5z"
-                />
-              </svg>
+              <UxUiDesignIcon className="w-8 h-8 text-success" />
             </div>
             <h3 className="font-playfair text-lg font-semibold mb-3 text-primary">
               Design
@@ -75,19 +55,7 @@ function ToolsTechnologies() {
           {/* Development */}
           <div className="text-center">
             <div className="w-16 h-16 mx-auto mb-4 bg-warning/10 rounded-full flex items-center justify-center">
-              <svg
-                className="w-8 h-8 text-warning"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
-                />
-              </svg>
+              <FrontendDevelopmentIcon className="w-8 h-8 text-warning" />
             </div>
             <h3 className="font-playfair text-lg font-semibold mb-3 text-primary">
               Development
@@ -103,19 +71,7 @@ function ToolsTechnologies() {
           {/* Collaboration */}
           <div className="text-center">
             <div className="w-16 h-16 mx-auto mb-4 bg-error/10 rounded-full flex items-center justify-center">
-              <svg
-                className="w-6 h-6 text-error"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
-                />
-              </svg>
+              <CollaborativeIcon className="w-6 h-6 text-error" />
             </div>
             <h3 className="font-playfair text-lg font-semibold mb-3 text-primary">
               Collaboration

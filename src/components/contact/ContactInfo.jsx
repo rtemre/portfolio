@@ -1,4 +1,9 @@
 import React from "react";
+import MailIcon from "../../assets/svgs/mail";
+import PhoneIcon from "../../assets/svgs/phone";
+import MapPinIcon from "../../assets/svgs/map-pin";
+import LinkIcon from "../../assets/svgs/link";
+import ChevronDownIcon from "../../assets/icons/ChevronDownIcon";
 
 function ContactInfo() {
   return (
@@ -11,19 +16,7 @@ function ContactInfo() {
         {/* Email */}
         <div className="flex items-start">
           <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center mr-4">
-            <svg
-              className="w-6 h-6 text-accent"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-              />
-            </svg>
+            <MailIcon className="w-6 h-6 text-accent" />
           </div>
           <div>
             <h3 className="font-playfair text-lg font-semibold mb-2 text-primary">
@@ -44,19 +37,7 @@ function ContactInfo() {
         {/* Phone */}
         <div className="flex items-start">
           <div className="w-12 h-12 bg-success/10 rounded-lg flex items-center justify-center mr-4">
-            <svg
-              className="w-6 h-6 text-success"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-              />
-            </svg>
+            <PhoneIcon className="w-6 h-6 text-success" />
           </div>
           <div>
             <h3 className="font-playfair text-lg font-semibold mb-2 text-primary">
@@ -77,25 +58,7 @@ function ContactInfo() {
         {/* Location */}
         <div className="flex items-start">
           <div className="w-12 h-12 bg-warning/10 rounded-lg flex items-center justify-center mr-4">
-            <svg
-              className="w-6 h-6 text-warning"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-              />
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
-              />
-            </svg>
+            <MapPinIcon className="w-6 h-6 text-warning" />
           </div>
           <div>
             <h3 className="font-playfair text-lg font-semibold mb-2 text-primary">
@@ -112,19 +75,7 @@ function ContactInfo() {
         {/* Social Links */}
         <div className="flex items-start">
           <div className="w-12 h-12 bg-error/10 rounded-lg flex items-center justify-center mr-4">
-            <svg
-              className="w-6 h-6 text-error"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"
-              />
-            </svg>
+            <LinkIcon className="w-6 h-6 text-error" />
           </div>
           <div>
             <h3 className="font-playfair text-lg font-semibold mb-2 text-primary">
@@ -165,19 +116,7 @@ function ContactInfo() {
               <span className="font-medium text-primary">
                 What's your typical response time?
               </span>
-              <svg
-                className="w-5 h-5 text-secondary transition-transform duration-300"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M19 9l-7 7-7-7"
-                />
-              </svg>
+              <ChevronDownIcon className="w-5 h-5 text-secondary transition-transform duration-300" />
             </button>
             <div className="faq-content hidden mt-2 text-secondary">
               We typically respond to all inquiries within 24 hours during
@@ -190,19 +129,7 @@ function ContactInfo() {
               <span className="font-medium text-primary">
                 Do you work with international clients?
               </span>
-              <svg
-                className="w-5 h-5 text-secondary transition-transform duration-300"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M19 9l-7 7-7-7"
-                />
-              </svg>
+              <ChevronDownIcon className="w-5 h-5 text-secondary transition-transform duration-300" />
             </button>
             <div className="faq-content hidden mt-2 text-secondary">
               Absolutely! We work with clients worldwide and have extensive
@@ -215,19 +142,7 @@ function ContactInfo() {
               <span className="font-medium text-primary">
                 What's included in your initial consultation?
               </span>
-              <svg
-                className="w-5 h-5 text-secondary transition-transform duration-300"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M19 9l-7 7-7-7"
-                />
-              </svg>
+              <ChevronDownIcon className="w-5 h-5 text-secondary transition-transform duration-300" />
             </button>
             <div className="faq-content hidden mt-2 text-secondary">
               Our free 30-minute consultation covers project goals, timeline

@@ -1,4 +1,5 @@
 import React from "react";
+import ChevronDownIcon from "../../assets/icons/ChevronDownIcon";
 
 function ContactForm() {
   return (
@@ -93,19 +94,7 @@ function ContactForm() {
               <option value="other">Other</option>
             </select>
             <div className="absolute inset-y-0 right-0 flex items-center px-3 pointer-events-none">
-              <svg
-                className="w-4 h-4 text-secondary"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M19 9l-7 7-7-7"
-                />
-              </svg>
+              <ChevronDownIcon className="w-4 h-4 text-secondary" />
             </div>
           </div>
         </div>
@@ -131,19 +120,7 @@ function ContactForm() {
               <option value="over-100k">Over $100,000</option>
             </select>
             <div className="absolute inset-y-0 right-0 flex items-center px-3 pointer-events-none">
-              <svg
-                className="w-4 h-4 text-secondary"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M19 9l-7 7-7-7"
-                />
-              </svg>
+              <ChevronDownIcon className="w-4 h-4 text-secondary" />
             </div>
           </div>
         </div>
@@ -169,19 +146,7 @@ function ContactForm() {
               <option value="flexible">Flexible</option>
             </select>
             <div className="absolute inset-y-0 right-0 flex items-center px-3 pointer-events-none">
-              <svg
-                className="w-4 h-4 text-secondary"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M19 9l-7 7-7-7"
-                />
-              </svg>
+              <ChevronDownIcon className="w-4 h-4 text-secondary" />
             </div>
           </div>
         </div>
