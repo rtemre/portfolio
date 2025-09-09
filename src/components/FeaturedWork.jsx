@@ -1,6 +1,5 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { projects } from "./constants.jsx";
+import { Link } from 'react-router-dom'
+import { projects } from './constants.jsx'
 
 function FeaturedWork() {
   return (
@@ -31,7 +30,7 @@ function FeaturedWork() {
                   className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
                   loading="lazy"
                   onError={(e) => {
-                    e.target.src = "/images/fallback-image.jpeg";
+                    e.target.src = '/images/fallback-image.jpeg'
                   }}
                 />
                 <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/20 transition-all duration-300"></div>
@@ -69,7 +68,7 @@ function FeaturedWork() {
         </div>
       </div>
     </section>
-  );
+  )
 }
 
-export default FeaturedWork;
+export default FeaturedWork

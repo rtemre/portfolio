@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
-import { Link, useLocation } from "react-router-dom";
-import { HamburgerIcon, ChevronDownIcon } from "../assets/icons";
-import { routes } from "./constants.jsx";
+import { useState, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
+import { HamburgerIcon } from '../assets/icons';
+import { routes } from './constants.jsx';
 
 function Nav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,13 +13,13 @@ function Nav() {
       setIsScrolled(window.scrollY > 100);
     };
 
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   const isActive = (path) => {
-    if (path === "/") {
-      return location.pathname === "/" || location.pathname === "/home";
+    if (path === '/') {
+      return location.pathname === '/' || location.pathname === '/home';
     }
     return location.pathname === path;
   };
@@ -27,7 +27,7 @@ function Nav() {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100 transition-all duration-300 ${
-        isScrolled ? "shadow-medium" : ""
+        isScrolled ? 'shadow-medium' : ''
       }`}
     >
       <div className="max-w-7xl mx-auto p-6">
@@ -46,14 +46,14 @@ function Nav() {
                 to={route.path}
                 className={`font-medium relative transition-all duration-300 ${
                   isActive(route.path)
-                    ? "text-primary"
-                    : "text-secondary hover:text-accent"
+                    ? 'text-primary'
+                    : 'text-secondary hover:text-accent'
                 }`}
               >
                 {route.label}
                 <span
                   className={`absolute -bottom-1 left-0 h-0.5 bg-accent transition-all duration-300 rounded-full ${
-                    isActive(route.path) ? "w-full" : "w-0"
+                    isActive(route.path) ? 'w-full' : 'w-0'
                   }`}
                 ></span>
               </Link>
@@ -77,14 +77,14 @@ function Nav() {
                   to={route.path}
                   className={`font-medium relative transition-all duration-300 ${
                     isActive(route.path)
-                      ? "text-primary"
-                      : "text-secondary hover:text-accent"
+                      ? 'text-primary'
+                      : 'text-secondary hover:text-accent'
                   }`}
                 >
                   {route.label}
                   <span
                     className={`absolute -bottom-1 left-0 h-0.5 bg-accent transition-all duration-300 rounded-full ${
-                      isActive(route.path) ? "w-full" : "w-0"
+                      isActive(route.path) ? 'w-full' : 'w-0'
                     }`}
                   ></span>
                 </Link>

@@ -1,4 +1,3 @@
-import React from "react";
 import {
   AboutHero,
   OriginStory,
@@ -6,18 +5,18 @@ import {
   DesignPhilosophy,
   SkillsCompetencies,
   EducationCertifications,
-} from "../components/about";
+} from '../components/about';
 
 function About() {
   return (
-    <>
+    <div>
       <AboutHero />
       <OriginStory />
       <ProfessionalTimeline />
       <DesignPhilosophy />
       <SkillsCompetencies />
       <EducationCertifications />
-    </>
+    </div>
   );
 }
 

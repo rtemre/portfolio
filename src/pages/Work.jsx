@@ -1,14 +1,13 @@
-import React from "react";
-import { WorkHeader, WorkFilters, WorkGrid, WorkCTA } from "../components/work";
+import { WorkHeader, WorkFilters, WorkGrid, WorkCTA } from '../components/work';
 
 function Work() {
   return (
-    <>
+    <div>
       <WorkHeader />
       <WorkFilters />
       <WorkGrid />
       <WorkCTA />
-    </>
+    </div>
   );
 }
 

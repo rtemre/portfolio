@@ -1,6 +1,4 @@
-import React from "react";
-
-function ArrowRightIcon({ className = "w-5 h-5" }) {
+function ArrowRightIcon({ className = 'w-5 h-5' }) {
   return (
     <svg
       className={className}
@@ -15,7 +13,7 @@ function ArrowRightIcon({ className = "w-5 h-5" }) {
         d="M9 5l7 7-7 7"
       />
     </svg>
-  );
+  )
 }
 
-export default ArrowRightIcon;
+export default ArrowRightIcon

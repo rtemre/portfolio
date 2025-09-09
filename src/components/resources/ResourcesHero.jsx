@@ -1,5 +1,3 @@
-import React from "react";
-
 function ResourcesHero() {
   return (
     <section className="relative pt-32 pb-20 bg-gradient-to-br from-primary to-primary/80 text-white overflow-hidden">
@@ -10,8 +8,8 @@ function ResourcesHero() {
           className="w-full h-full object-cover"
           loading="lazy"
           onError={(e) => {
-            e.target.src = "/images/general-design-image.jpeg";
-            e.target.onError = null;
+            e.target.src = '/images/general-design-image.jpeg'
+            e.target.onError = null
           }}
         />
       </div>
@@ -26,7 +24,7 @@ function ResourcesHero() {
         </p>
       </div>
     </section>
-  );
+  )
 }
 
-export default ResourcesHero;
+export default ResourcesHero

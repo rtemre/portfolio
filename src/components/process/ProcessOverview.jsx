@@ -1,5 +1,4 @@
-import React from "react";
-import { phases } from "./constants";
+import { phases } from './constants'
 function ProcessOverview() {
   return (
     <section id="process-overview" className="py-20 bg-surface">
@@ -23,12 +22,12 @@ function ProcessOverview() {
             <div key={phase.id} className={`relative ${phase.containerClass}`}>
               <div
                 className={`flex flex-col ${
-                  phase.isReversed ? "md:flex-row-reverse" : "md:flex-row"
+                  phase.isReversed ? 'md:flex-row-reverse' : 'md:flex-row'
                 } items-center`}
               >
                 <div
                   className={`md:w-1/2 ${
-                    phase.isReversed ? "md:pl-12" : "md:pr-12"
+                    phase.isReversed ? 'md:pl-12' : 'md:pr-12'
                   } mb-8 md:mb-0`}
                 >
                   <div
@@ -61,7 +60,7 @@ function ProcessOverview() {
                 </div>
                 <div
                   className={`md:w-1/2 ${
-                    phase.isReversed ? "md:pr-12" : "md:pl-12"
+                    phase.isReversed ? 'md:pr-12' : 'md:pl-12'
                   }`}
                 >
                   <img
@@ -70,8 +69,8 @@ function ProcessOverview() {
                     className="w-full h-64 object-cover rounded-lg shadow-medium"
                     loading="lazy"
                     onError={(e) => {
-                      e.target.src = phase.image.fallback;
-                      e.target.onError = null;
+                      e.target.src = phase.image.fallback
+                      e.target.onError = null
                     }}
                   />
                 </div>
@@ -126,7 +125,7 @@ function ProcessOverview() {
         </div>
       </div>
     </section>
-  );
+  )
 }
 
-export default ProcessOverview;
+export default ProcessOverview

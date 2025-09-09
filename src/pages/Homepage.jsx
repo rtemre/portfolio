@@ -1,10 +1,10 @@
-import React, { useEffect } from "react";
-import Hero from "../components/Hero";
-import FeaturedWork from "../components/FeaturedWork";
-import Skills from "../components/Skills";
-import ClientLogos from "../components/ClientLogos";
-import BlogPreview from "../components/BlogPreview";
-import Newsletter from "../components/Newsletter";
+import { useEffect } from 'react';
+import Hero from '../components/Hero';
+import FeaturedWork from '../components/FeaturedWork';
+import Skills from '../components/Skills';
+import ClientLogos from '../components/ClientLogos';
+import BlogPreview from '../components/BlogPreview';
+import Newsletter from '../components/Newsletter';
 
 function Homepage() {
   useEffect(() => {
@@ -13,21 +13,21 @@ function Homepage() {
       const target = e.target.closest('a[href^="#"]');
       if (target) {
         e.preventDefault();
-        const element = document.querySelector(target.getAttribute("href"));
+        const element = document.querySelector(target.getAttribute('href'));
         if (element) {
           element.scrollIntoView({
-            behavior: "smooth",
-            block: "start",
+            behavior: 'smooth',
+            block: 'start',
           });
         }
       }
     };
 
-    document.addEventListener("click", handleClick);
-    return () => document.removeEventListener("click", handleClick);
+    document.addEventListener('click', handleClick);
+    return () => document.removeEventListener('click', handleClick);
   }, []);
   return (
-    <>
+    <div>
       <Hero />
 
       {/* Personal Introduction */}
@@ -37,9 +37,9 @@ function Homepage() {
             Design Philosophy
           </h2>
           <p className="text-xl text-secondary leading-relaxed mb-6">
-            I believe that great design is invisible until it's extraordinary.
-            In today's digital landscape, a portfolio must be more than a
-            gallery—it's a living testament to craft, attention to detail, and
+            I believe that great design is invisible until it is extraordinary.
+            In today is digital landscape, a portfolio must be more than a
+            gallery—it is a living testament to craft, attention to detail, and
             user-centered thinking.
           </p>
           <p className="text-lg text-secondary leading-relaxed">
@@ -55,7 +55,7 @@ function Homepage() {
       <ClientLogos />
       <BlogPreview />
       <Newsletter />
-    </>
+    </div>
   );
 }
 

@@ -1,4 +1,4 @@
-import React from "react";
+import { Link } from 'react-router-dom'
 
 function ProcessCTA() {
   return (
@@ -8,27 +8,27 @@ function ProcessCTA() {
           Ready to Start Your Project?
         </h2>
         <p className="text-xl mb-8 opacity-90">
-          Let's discuss how our proven methodology can help you achieve your
+          Let us discuss how our proven methodology can help you achieve your
           goals through strategic design and collaborative partnership.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <a
-            href="/contact"
+          <Link
+            to="/contact"
             className="btn-primary bg-accent hover:bg-accent/90 text-lg px-8 py-4"
           >
             Start a Conversation
-          </a>
-          <a
-            href="/work"
+          </Link>
+          <Link
+            to="/work"
             className="btn-secondary text-lg px-8 py-4 bg-white/10 border-white/30 text-white hover:bg-white hover:text-primary"
           >
             View Our Work
-          </a>
+          </Link>
         </div>
       </div>
     </section>
-  );
+  )
 }
 
-export default ProcessCTA;
+export default ProcessCTA

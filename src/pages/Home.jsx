@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
-import ArrowRightIcon from "../assets/svgs/arrow-right";
+import { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
+import ArrowRightIcon from '../assets/svgs/arrow-right';
 
 function Home() {
   const [countdown, setCountdown] = useState(5);
@@ -10,7 +10,7 @@ function Home() {
     const timer = setInterval(() => {
       setCountdown((prev) => {
         if (prev <= 1) {
-          navigate("/home");
+          navigate('/home');
           clearInterval(timer);
           return 0;
         }
@@ -21,7 +21,7 @@ function Home() {
   }, []);
 
   const handleClick = () => {
-    navigate("/home");
+    navigate('/home');
   };
 
   return (
@@ -38,7 +38,7 @@ function Home() {
           <div className="space-y-4">
             <div
               className="animate-slide-up"
-              style={{ animationDelay: "0.2s" }}
+              style={{ animationDelay: '0.2s' }}
             >
               <button
                 onClick={handleClick}

@@ -1,7 +1,6 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import ArrowRightIcon from "../../assets/svgs/arrow-right";
-import { articles } from "./constants";
+import { Link } from 'react-router-dom'
+import ArrowRightIcon from '../../assets/svgs/arrow-right'
+import { articles } from './constants'
 function BlogRecentArticles() {
   return (
     <section className="py-20 bg-surface">
@@ -24,7 +23,7 @@ function BlogRecentArticles() {
               key={article.id}
               className="card group cursor-pointer overflow-hidden article-item"
               data-category={article.category}
-              onClick={() => (window.location.href = "/case-study")}
+              onClick={() => (window.location.href = '/case-study')}
             >
               <div className="relative overflow-hidden">
                 <img
@@ -33,8 +32,8 @@ function BlogRecentArticles() {
                   className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
                   loading="lazy"
                   onError={(e) => {
-                    e.target.src = article.image.fallback;
-                    e.target.onError = null;
+                    e.target.src = article.image.fallback
+                    e.target.onError = null
                   }}
                 />
               </div>
@@ -72,7 +71,7 @@ function BlogRecentArticles() {
         </div>
       </div>
     </section>
-  );
+  )
 }
 
-export default BlogRecentArticles;
+export default BlogRecentArticles

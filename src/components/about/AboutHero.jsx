@@ -1,5 +1,4 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom'
 
 function AboutHero() {
   return (
@@ -15,8 +14,8 @@ function AboutHero() {
                 className="w-full h-96 lg:h-[500px] object-cover"
                 loading="lazy"
                 onError={(e) => {
-                  e.target.src = "/images/professional-portrait-1.jpeg";
-                  e.target.onError = null;
+                  e.target.src = '/images/professional-portrait-1.jpeg'
+                  e.target.onError = null
                 }}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent"></div>
@@ -29,11 +28,11 @@ function AboutHero() {
           {/* Personal Statement */}
           <div className="space-y-6">
             <h1 className="text-hero font-playfair text-primary animate-fade-in">
-              Hello, I'm <span className="text-accent">Alex</span>
+              Hello, I am <span className="text-accent">Alex</span>
             </h1>
             <p className="text-xl text-secondary leading-relaxed animate-slide-up">
               A creative problem-solver who believes that great design is
-              invisible until it's extraordinary. I specialize in crafting
+              invisible until it is extraordinary. I specialize in crafting
               digital experiences that seamlessly blend aesthetic excellence
               with strategic thinking.
             </p>
@@ -55,7 +54,7 @@ function AboutHero() {
         </div>
       </div>
     </section>
-  );
+  )
 }
 
-export default AboutHero;
+export default AboutHero

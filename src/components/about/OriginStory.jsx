@@ -1,5 +1,4 @@
-import React from "react";
-import { paragraphs } from "./constants";
+import { paragraphs } from './constants'
 function OriginStory() {
   return (
     <section className="py-20 bg-white">
@@ -19,7 +18,7 @@ function OriginStory() {
             <p
               key={index}
               className={`text-lg text-secondary leading-relaxed ${
-                index < paragraphs.length - 1 ? "mb-6" : ""
+                index < paragraphs.length - 1 ? 'mb-6' : ''
               }`}
             >
               {paragraph}
@@ -28,7 +27,7 @@ function OriginStory() {
         </div>
       </div>
     </section>
-  );
+  )
 }
 
-export default OriginStory;
+export default OriginStory

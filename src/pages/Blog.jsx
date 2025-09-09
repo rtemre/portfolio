@@ -1,19 +1,18 @@
-import React from "react";
 import {
   BlogHero,
   BlogCategoryFilter,
   BlogFeaturedPost,
   BlogRecentArticles,
-} from "../components/blog";
+} from '../components/blog';
 
 function Blog() {
   return (
-    <>
+    <div>
       <BlogHero />
       <BlogCategoryFilter />
       <BlogFeaturedPost />
       <BlogRecentArticles />
-    </>
+    </div>
   );
 }
 

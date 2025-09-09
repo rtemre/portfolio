@@ -1,18 +1,18 @@
-import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
-import ChevronDownIcon from "../assets/svgs/chevron-down";
-import { slides } from "./constants.jsx";
+import { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
+import ChevronDownIcon from '../assets/svgs/chevron-down'
+import { slides } from './constants.jsx'
 
 function Hero() {
-  const [currentSlide, setCurrentSlide] = useState(0);
+  const [currentSlide, setCurrentSlide] = useState(0)
 
   useEffect(() => {
     const timer = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % slides.length);
-    }, 5000);
+      setCurrentSlide((prev) => (prev + 1) % slides.length)
+    }, 5000)
 
-    return () => clearInterval(timer);
-  }, [slides.length]);
+    return () => clearInterval(timer)
+  }, [slides.length])
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
@@ -22,7 +22,7 @@ function Hero() {
           <div
             key={index}
             className={`absolute inset-0 transition-opacity duration-1000 ${
-              index === currentSlide ? "opacity-100" : "opacity-0"
+              index === currentSlide ? 'opacity-100' : 'opacity-0'
             }`}
           >
             <img
@@ -31,7 +31,7 @@ function Hero() {
               className="w-full h-full object-cover"
               loading="lazy"
               onError={(e) => {
-                e.target.src = "/images/fallback-image.jpeg";
+                e.target.src = '/images/fallback-image.jpeg'
               }}
             />
             <div className="absolute inset-0 bg-primary/60"></div>
@@ -42,14 +42,14 @@ function Hero() {
       {/* Hero Content */}
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center text-white">
         <h1 className="text-hero font-playfair mb-6 animate-fade-in text-white drop-shadow-lg">
-          Where{" "}
+          Where{' '}
           <span className="text-accent drop-shadow-lg">Invisible Design</span>
           <br />
           Becomes Extraordinary
         </h1>
         <p className="text-xl mb-8 max-w-2xl mx-auto opacity-90 animate-slide-up drop-shadow-md">
           Crafting digital experiences that seamlessly blend aesthetic
-          excellence with strategic thinking, creating portfolios that don't
+          excellence with strategic thinking, creating portfolios that do not
           just showcase work—they tell compelling stories.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center animate-scale-in">
@@ -70,7 +70,7 @@ function Hero() {
         <ChevronDownIcon className="w-6 h-6" />
       </div>
     </section>
-  );
+  )
 }
 
-export default Hero;
+export default Hero

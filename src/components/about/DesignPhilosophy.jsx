@@ -1,5 +1,4 @@
-import React from "react";
-import { philosophyItems } from "./constants";
+import { philosophyItems } from './constants'
 function DesignPhilosophy() {
   return (
     <section className="py-20 bg-white">
@@ -16,7 +15,7 @@ function DesignPhilosophy() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {philosophyItems.map((item) => {
-            const IconComponent = item.icon;
+            const IconComponent = item.icon
             return (
               <div key={item.id} className="text-center">
                 <div
@@ -29,12 +28,12 @@ function DesignPhilosophy() {
                 </h3>
                 <p className="text-secondary">{item.description}</p>
               </div>
-            );
+            )
           })}
         </div>
       </div>
     </section>
-  );
+  )
 }
 
-export default DesignPhilosophy;
+export default DesignPhilosophy

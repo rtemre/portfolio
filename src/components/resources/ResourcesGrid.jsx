@@ -1,5 +1,4 @@
-import React from "react";
-import { resources } from "./constants";
+import { resources } from './constants'
 function ResourcesGrid() {
   return (
     <section className="py-20 bg-white">
@@ -28,8 +27,8 @@ function ResourcesGrid() {
                   className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
                   loading="lazy"
                   onError={(e) => {
-                    e.target.src = resource.image.fallback;
-                    e.target.onError = null;
+                    e.target.src = resource.image.fallback
+                    e.target.onError = null
                   }}
                 />
                 <div className="absolute top-4 left-4">
@@ -49,10 +48,13 @@ function ResourcesGrid() {
                   <span className="text-sm text-secondary">
                     {resource.meta}
                   </span>
-                  {resource.action.type === "download" ? (
+                  {resource.action.type === 'download' ? (
                     <button
                       className="btn-primary text-sm px-4 py-2"
-                      onClick={() => alert("Download started!")}
+                      onClick={() => {
+                        // Handle download logic here
+                        console.log('Download started for:', resource.title)
+                      }}
                     >
                       {resource.action.text}
                     </button>
@@ -73,7 +75,7 @@ function ResourcesGrid() {
         </div>
       </div>
     </section>
-  );
+  )
 }
 
-export default ResourcesGrid;
+export default ResourcesGrid

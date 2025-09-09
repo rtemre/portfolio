@@ -1,17 +1,16 @@
-import React from "react";
 import {
   ResourcesHero,
   ResourcesGrid,
   ResourcesCTA,
-} from "../components/resources";
+} from '../components/resources';
 
 function Resources() {
   return (
-    <>
+    <div>
       <ResourcesHero />
       <ResourcesGrid />
       <ResourcesCTA />
-    </>
+    </div>
   );
 }
 

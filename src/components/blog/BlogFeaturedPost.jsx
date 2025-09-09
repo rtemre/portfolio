@@ -1,7 +1,6 @@
-import React from "react";
-import ArrowRightIcon from "../../assets/svgs/arrow-right";
-import TwitterIcon from "../../assets/svgs/twitter";
-import LinkedInIcon from "../../assets/svgs/linkedin";
+import ArrowRightIcon from '../../assets/svgs/arrow-right'
+import TwitterIcon from '../../assets/svgs/twitter'
+import LinkedInIcon from '../../assets/svgs/linkedin'
 
 function BlogFeaturedPost() {
   return (
@@ -18,7 +17,7 @@ function BlogFeaturedPost() {
 
         <article
           className="card overflow-hidden group cursor-pointer"
-          onClick={() => (window.location.href = "/case-study")}
+          onClick={() => (window.location.href = '/case-study')}
         >
           <div className="md:flex">
             <div className="md:w-1/2 relative overflow-hidden">
@@ -28,8 +27,8 @@ function BlogFeaturedPost() {
                 className="w-full h-64 md:h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 loading="lazy"
                 onError={(e) => {
-                  e.target.src = "/images/general-design-image.jpeg";
-                  e.target.onError = null;
+                  e.target.src = '/images/general-design-image.jpeg'
+                  e.target.onError = null
                 }}
               />
               <div className="absolute top-4 left-4">
@@ -52,8 +51,8 @@ function BlogFeaturedPost() {
               <p className="text-secondary mb-6 leading-relaxed">
                 Exploring the intersection of AI, accessibility, and
                 human-centered design in the coming year. From
-                micro-interactions to macro-experiences, discover what's driving
-                innovation in digital design.
+                micro-interactions to macro-experiences, discover what is
+                driving innovation in digital design.
               </p>
               <div className="flex items-center justify-between">
                 <div className="flex items-center text-accent font-medium">
@@ -80,7 +79,7 @@ function BlogFeaturedPost() {
         </article>
       </div>
     </section>
-  );
+  )
 }
 
-export default BlogFeaturedPost;
+export default BlogFeaturedPost

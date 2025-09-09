@@ -1,5 +1,4 @@
-import React from "react";
-import ChevronDownIcon from "../../assets/icons/ChevronDownIcon";
+import ChevronDownIcon from '../../assets/icons/ChevronDownIcon'
 
 function ContactForm() {
   return (
@@ -201,7 +200,7 @@ function ContactForm() {
         </button>
       </form>
     </div>
-  );
+  )
 }
 
-export default ContactForm;
+export default ContactForm

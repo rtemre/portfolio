@@ -1,5 +1,4 @@
-import React from "react";
-import { categories } from "./constants";
+import { categories } from './constants'
 function BlogCategoryFilter() {
   return (
     <section className="py-8 bg-surface border-b border-gray-200">
@@ -10,8 +9,8 @@ function BlogCategoryFilter() {
               key={category.id}
               className={`filter-btn ${
                 category.isActive
-                  ? "active px-6 py-2 rounded-full bg-accent text-white font-medium transition-all duration-300"
-                  : "px-6 py-2 rounded-full bg-white text-secondary border border-gray-200 font-medium hover:bg-accent hover:text-white transition-all duration-300"
+                  ? 'active px-6 py-2 rounded-full bg-accent text-white font-medium transition-all duration-300'
+                  : 'px-6 py-2 rounded-full bg-white text-secondary border border-gray-200 font-medium hover:bg-accent hover:text-white transition-all duration-300'
               }`}
               data-category={category.category}
             >
@@ -21,7 +20,7 @@ function BlogCategoryFilter() {
         </div>
       </div>
     </section>
-  );
+  )
 }
 
-export default BlogCategoryFilter;
+export default BlogCategoryFilter

@@ -1,5 +1,4 @@
-import React from "react";
-import { timelineItems } from "./constants";
+import { timelineItems } from './constants'
 function ProfessionalTimeline() {
   return (
     <section className="py-20 bg-surface">
@@ -21,7 +20,7 @@ function ProfessionalTimeline() {
           {/* Timeline Items */}
           <div className="space-y-16">
             {timelineItems.map((item, index) => {
-              const isEven = index % 2 === 0;
+              const isEven = index % 2 === 0
               return (
                 <div
                   key={item.id}
@@ -92,13 +91,13 @@ function ProfessionalTimeline() {
                     </div>
                   </div>
                 </div>
-              );
+              )
             })}
           </div>
         </div>
       </div>
     </section>
-  );
+  )
 }
 
-export default ProfessionalTimeline;
+export default ProfessionalTimeline

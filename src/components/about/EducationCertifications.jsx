@@ -1,5 +1,4 @@
-import React from "react";
-import { educationItems } from "./constants";
+import { educationItems } from './constants'
 function EducationCertifications() {
   return (
     <section className="py-20 bg-white">
@@ -16,7 +15,7 @@ function EducationCertifications() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {educationItems.map((item) => {
-            const IconComponent = item.icon;
+            const IconComponent = item.icon
             return (
               <div key={item.id} className="card p-6">
                 <div
@@ -32,12 +31,12 @@ function EducationCertifications() {
                 </p>
                 <p className="text-secondary text-sm">{item.details}</p>
               </div>
-            );
+            )
           })}
         </div>
       </div>
     </section>
-  );
+  )
 }
 
-export default EducationCertifications;
+export default EducationCertifications

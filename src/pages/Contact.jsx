@@ -1,9 +1,8 @@
-import React from "react";
-import { ContactHero, ContactForm, ContactInfo } from "../components/contact";
+import { ContactHero, ContactForm, ContactInfo } from '../components/contact';
 
 function Contact() {
   return (
-    <>
+    <div>
       <ContactHero />
       <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-6">
@@ -13,7 +12,7 @@ function Contact() {
           </div>
         </div>
       </section>
-    </>
+    </div>
   );
 }
 

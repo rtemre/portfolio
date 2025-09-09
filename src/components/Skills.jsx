@@ -1,5 +1,5 @@
-import React, { useEffect, useRef, useState } from "react";
-import { skills } from "./constants.jsx";
+import { useEffect, useRef, useState } from 'react';
+import { skills } from './constants.jsx';
 
 function Skills() {
   const [isVisible, setIsVisible] = useState(false);
@@ -51,9 +51,9 @@ function Skills() {
               <div className="w-full bg-gray-200 rounded-full h-2 mb-4">
                 <div
                   className={`h-2 rounded-full transition-all duration-1000 ease-out ${
-                    isVisible ? `bg-accent` : "bg-transparent"
+                    isVisible ? `bg-accent` : 'bg-transparent'
                   }`}
-                  style={{ width: isVisible ? `${skill.percentage}%` : "0%" }}
+                  style={{ width: isVisible ? `${skill.percentage}%` : '0%' }}
                 ></div>
               </div>
               <p className="text-secondary">{skill.description}</p>

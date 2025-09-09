@@ -1,5 +1,3 @@
-import React from "react";
-
 function WorkHeader() {
   return (
     <section className="pt-32 pb-16 bg-surface">
@@ -44,7 +42,7 @@ function WorkHeader() {
         </div>
       </div>
     </section>
-  );
+  )
 }
 
-export default WorkHeader;
+export default WorkHeader

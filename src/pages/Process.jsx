@@ -1,19 +1,18 @@
-import React from "react";
 import {
   ProcessHero,
   ProcessOverview,
   ToolsTechnologies,
   ProcessCTA,
-} from "../components/process";
+} from '../components/process';
 
 function Process() {
   return (
-    <>
+    <div>
       <ProcessHero />
       <ProcessOverview />
       <ToolsTechnologies />
       <ProcessCTA />
-    </>
+    </div>
   );
 }
 

@@ -1,11 +1,10 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom'
 import {
   socialLinks,
   quickLinks,
   contactLinks,
   footerBottomLinks,
-} from "./constants.jsx";
+} from './constants.jsx'
 
 function Footer() {
   return (
@@ -67,7 +66,7 @@ function Footer() {
                     <li key={index} className="text-secondary">
                       {link.label}
                     </li>
-                  );
+                  )
                 }
 
                 if (link.to) {
@@ -80,7 +79,7 @@ function Footer() {
                         {link.label}
                       </Link>
                     </li>
-                  );
+                  )
                 }
 
                 return (
@@ -92,7 +91,7 @@ function Footer() {
                       {link.label}
                     </a>
                   </li>
-                );
+                )
               })}
             </ul>
           </div>
@@ -116,7 +115,7 @@ function Footer() {
         </div>
       </div>
     </footer>
-  );
+  )
 }
 
-export default Footer;
+export default Footer

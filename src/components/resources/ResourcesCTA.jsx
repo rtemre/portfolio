@@ -1,5 +1,3 @@
-import React from "react";
-
 function ResourcesCTA() {
   return (
     <section className="py-20 bg-primary text-white">
@@ -34,7 +32,7 @@ function ResourcesCTA() {
         </p>
       </div>
     </section>
-  );
+  )
 }
 
-export default ResourcesCTA;
+export default ResourcesCTA
