@@ -1,9 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import TwitterIcon from "../assets/svgs/twitter";
-import LinkedInIcon from "../assets/svgs/linkedin";
-import InstagramIcon from "../assets/svgs/instagram";
-import PinterestIcon from "../assets/svgs/pinterest";
+import {
+  socialLinks,
+  quickLinks,
+  contactLinks,
+  footerBottomLinks,
+} from "./constants.jsx";
 
 function Footer() {
   return (
@@ -23,30 +25,16 @@ function Footer() {
               extraordinary.
             </p>
             <div className="flex space-x-4">
-              <a
-                href="#"
-                className="w-10 h-10 bg-surface rounded-full flex items-center justify-center text-secondary hover:text-accent hover:bg-accent/10 transition-all duration-300"
-              >
-                <TwitterIcon className="w-5 h-5" />
-              </a>
-              <a
-                href="#"
-                className="w-10 h-10 bg-surface rounded-full flex items-center justify-center text-secondary hover:text-accent hover:bg-accent/10 transition-all duration-300"
-              >
-                <LinkedInIcon className="w-5 h-5" />
-              </a>
-              <a
-                href="#"
-                className="w-10 h-10 bg-surface rounded-full flex items-center justify-center text-secondary hover:text-accent hover:bg-accent/10 transition-all duration-300"
-              >
-                <InstagramIcon className="w-5 h-5" />
-              </a>
-              <a
-                href="#"
-                className="w-10 h-10 bg-surface rounded-full flex items-center justify-center text-secondary hover:text-accent hover:bg-accent/10 transition-all duration-300"
-              >
-                <PinterestIcon className="w-5 h-5" />
-              </a>
+              {socialLinks.map((link, index) => (
+                <a
+                  key={index}
+                  href={link.href}
+                  aria-label={link.label}
+                  className="w-10 h-10 bg-surface rounded-full flex items-center justify-center text-secondary hover:text-accent hover:bg-accent/10 transition-all duration-300"
+                >
+                  {link.icon}
+                </a>
+              ))}
             </div>
           </div>
 
@@ -55,46 +43,16 @@ function Footer() {
               Quick Links
             </h3>
             <ul className="space-y-2">
-              <li>
-                <Link
-                  to="/work"
-                  className="text-secondary hover:text-accent transition-colors duration-300"
-                >
-                  Portfolio
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/about"
-                  className="text-secondary hover:text-accent transition-colors duration-300"
-                >
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/process"
-                  className="text-secondary hover:text-accent transition-colors duration-300"
-                >
-                  Process
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/blog"
-                  className="text-secondary hover:text-accent transition-colors duration-300"
-                >
-                  Blog
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/resources"
-                  className="text-secondary hover:text-accent transition-colors duration-300"
-                >
-                  Resources
-                </Link>
-              </li>
+              {quickLinks.map((link, index) => (
+                <li key={index}>
+                  <Link
+                    to={link.to}
+                    className="text-secondary hover:text-accent transition-colors duration-300"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
@@ -103,31 +61,39 @@ function Footer() {
               Get in Touch
             </h3>
             <ul className="space-y-2">
-              <li>
-                <Link
-                  to="/contact"
-                  className="text-secondary hover:text-accent transition-colors duration-300"
-                >
-                  Contact Form
-                </Link>
-              </li>
-              <li>
-                <a
-                  href="mailto:hello@portfolio.com"
-                  className="text-secondary hover:text-accent transition-colors duration-300"
-                >
-                  hello@portfolio.com
-                </a>
-              </li>
-              <li>
-                <a
-                  href="tel:+1234567890"
-                  className="text-secondary hover:text-accent transition-colors duration-300"
-                >
-                  +1 (234) 567-890
-                </a>
-              </li>
-              <li className="text-secondary">Available for projects</li>
+              {contactLinks.map((link, index) => {
+                if (link.isText) {
+                  return (
+                    <li key={index} className="text-secondary">
+                      {link.label}
+                    </li>
+                  );
+                }
+
+                if (link.to) {
+                  return (
+                    <li key={index}>
+                      <Link
+                        to={link.to}
+                        className="text-secondary hover:text-accent transition-colors duration-300"
+                      >
+                        {link.label}
+                      </Link>
+                    </li>
+                  );
+                }
+
+                return (
+                  <li key={index}>
+                    <a
+                      href={link.href}
+                      className="text-secondary hover:text-accent transition-colors duration-300"
+                    >
+                      {link.label}
+                    </a>
+                  </li>
+                );
+              })}
             </ul>
           </div>
         </div>
@@ -137,24 +103,15 @@ function Footer() {
             © 2025 Portfolio Reimagined. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
-            <a
-              href="#"
-              className="text-secondary hover:text-accent text-sm transition-colors duration-300"
-            >
-              Privacy Policy
-            </a>
-            <a
-              href="#"
-              className="text-secondary hover:text-accent text-sm transition-colors duration-300"
-            >
-              Terms of Service
-            </a>
-            <a
-              href="#"
-              className="text-secondary hover:text-accent text-sm transition-colors duration-300"
-            >
-              Cookies
-            </a>
+            {footerBottomLinks.map((link, index) => (
+              <a
+                key={index}
+                href={link.href}
+                className="text-secondary hover:text-accent text-sm transition-colors duration-300"
+              >
+                {link.label}
+              </a>
+            ))}
           </div>
         </div>
       </div>

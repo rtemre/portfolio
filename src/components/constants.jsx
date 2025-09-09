@@ -1,6 +1,10 @@
 import UxUiDesignIcon from "../assets/svgs/ux-ui-design";
 import FrontendDevelopmentIcon from "../assets/svgs/frontend-development";
 import BrandStrategyIcon from "../assets/svgs/brand-strategy";
+import TwitterIcon from "../assets/svgs/twitter";
+import LinkedInIcon from "../assets/svgs/linkedin";
+import InstagramIcon from "../assets/svgs/instagram";
+import PinterestIcon from "../assets/svgs/pinterest";
 
 export const clients = [
   "TechCorp",
@@ -113,6 +117,50 @@ export const slides = [
     image: "/images/design-process-hero.jpeg",
     alt: "Brand strategy development",
   },
+];
+
+export const socialLinks = [
+  {
+    icon: <TwitterIcon className="w-5 h-5" />,
+    href: "#",
+    label: "Twitter",
+  },
+  {
+    icon: <LinkedInIcon className="w-5 h-5" />,
+    href: "#",
+    label: "LinkedIn",
+  },
+  {
+    icon: <InstagramIcon className="w-5 h-5" />,
+    href: "#",
+    label: "Instagram",
+  },
+  {
+    icon: <PinterestIcon className="w-5 h-5" />,
+    href: "#",
+    label: "Pinterest",
+  },
+];
+
+export const quickLinks = [
+  { to: "/work", label: "Portfolio" },
+  { to: "/about", label: "About" },
+  { to: "/process", label: "Process" },
+  { to: "/blog", label: "Blog" },
+  { to: "/resources", label: "Resources" },
+];
+
+export const contactLinks = [
+  { to: "/contact", label: "Contact Form" },
+  { href: "mailto:hello@portfolio.com", label: "hello@portfolio.com" },
+  { href: "tel:+1234567890", label: "+1 (234) 567-890" },
+  { label: "Available for projects", isText: true },
+];
+
+export const footerBottomLinks = [
+  { href: "#", label: "Privacy Policy" },
+  { href: "#", label: "Terms of Service" },
+  { href: "#", label: "Cookies" },
 ];
 
 export const routes = [
