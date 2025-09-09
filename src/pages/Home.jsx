@@ -7,18 +7,17 @@ function Home() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    const timer = setInterval(() => {
-      setCountdown((prev) => {
-        if (prev <= 1) {
-          navigate("/home");
-          clearInterval(timer);
-          return 0;
-        }
-        return prev - 1;
-      });
+    if (countdown <= 0) {
+      navigate("/home"); // ✅ redirect once countdown finishes
+      return;
+    }
+
+    const timer = setTimeout(() => {
+      setCountdown((prev) => prev - 1);
     }, 1000);
-    return () => clearInterval(timer);
-  }, [navigate]);
+
+    return () => clearTimeout(timer); // ✅ cleanup on unmount/re-render
+  }, [countdown, navigate]);
 
   const handleClick = () => {
     navigate("/home");
