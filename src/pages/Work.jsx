@@ -1,4 +1,4 @@
-import { WorkHeader, WorkFilters, WorkGrid, WorkCTA } from '../components/work';
+import { WorkHeader, WorkFilters, WorkGrid, WorkCTA } from "../components/work";
 
 function Work() {
   return (

@@ -3,7 +3,7 @@ import {
   BlogCategoryFilter,
   BlogFeaturedPost,
   BlogRecentArticles,
-} from '../components/blog';
+} from "../components/blog";
 
 function Blog() {
   return (

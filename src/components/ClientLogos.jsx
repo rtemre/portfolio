@@ -1,4 +1,4 @@
-import { clients } from './constants.jsx'
+import { clients } from "./constants.jsx";
 
 function ClientLogos() {
   return (
@@ -27,7 +27,7 @@ function ClientLogos() {
         </div>
       </div>
     </section>
-  )
+  );
 }
 
-export default ClientLogos
+export default ClientLogos;

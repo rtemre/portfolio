@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom";
 
 function AboutHero() {
   return (
@@ -14,8 +14,8 @@ function AboutHero() {
                 className="w-full h-96 lg:h-[500px] object-cover"
                 loading="lazy"
                 onError={(e) => {
-                  e.target.src = '/images/professional-portrait-1.jpeg'
-                  e.target.onError = null
+                  e.target.src = "/images/professional-portrait-1.jpeg";
+                  e.target.onError = null;
                 }}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent"></div>
@@ -54,7 +54,7 @@ function AboutHero() {
         </div>
       </div>
     </section>
-  )
+  );
 }
 
-export default AboutHero
+export default AboutHero;

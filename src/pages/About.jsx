@@ -5,7 +5,7 @@ import {
   DesignPhilosophy,
   SkillsCompetencies,
   EducationCertifications,
-} from '../components/about';
+} from "../components/about";
 
 function About() {
   return (

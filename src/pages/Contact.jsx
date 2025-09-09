@@ -1,4 +1,4 @@
-import { ContactHero, ContactForm, ContactInfo } from '../components/contact';
+import { ContactHero, ContactForm, ContactInfo } from "../components/contact";
 
 function Contact() {
   return (

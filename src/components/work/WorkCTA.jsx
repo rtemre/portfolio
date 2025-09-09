@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom";
 
 function WorkCTA() {
   return (
@@ -28,7 +28,7 @@ function WorkCTA() {
         </div>
       </div>
     </section>
-  )
+  );
 }
 
-export default WorkCTA
+export default WorkCTA;

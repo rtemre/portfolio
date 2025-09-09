@@ -2,7 +2,7 @@ import {
   ResourcesHero,
   ResourcesGrid,
   ResourcesCTA,
-} from '../components/resources';
+} from "../components/resources";
 
 function Resources() {
   return (

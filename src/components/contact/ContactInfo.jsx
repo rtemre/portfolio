@@ -1,5 +1,5 @@
-import ChevronDownIcon from '../../assets/icons/ChevronDownIcon'
-import { contactInfo, faqs } from './constants'
+import ChevronDownIcon from "../../assets/icons/ChevronDownIcon";
+import { contactInfo, faqs } from "./constants";
 
 function ContactInfo() {
   return (
@@ -10,7 +10,7 @@ function ContactInfo() {
 
       <div className="space-y-8">
         {contactInfo.map((info) => {
-          const IconComponent = info.icon
+          const IconComponent = info.icon;
           return (
             <div key={info.id} className="flex items-start">
               <div
@@ -22,7 +22,7 @@ function ContactInfo() {
                 <h3 className="font-playfair text-lg font-semibold mb-2 text-primary">
                   {info.title}
                 </h3>
-                {info.type === 'link' && (
+                {info.type === "link" && (
                   <a
                     href={info.content.href}
                     className="text-secondary hover:text-accent transition-colors duration-300"
@@ -30,17 +30,17 @@ function ContactInfo() {
                     {info.content.text}
                   </a>
                 )}
-                {info.type === 'text' && (
+                {info.type === "text" && (
                   <p className="text-secondary">
-                    {info.content.split('\n').map((line, index) => (
+                    {info.content.split("\n").map((line, index) => (
                       <span key={index}>
                         {line}
-                        {index < info.content.split('\n').length - 1 && <br />}
+                        {index < info.content.split("\n").length - 1 && <br />}
                       </span>
                     ))}
                   </p>
                 )}
-                {info.type === 'links' && (
+                {info.type === "links" && (
                   <div className="flex space-x-4">
                     {info.content.map((link) => (
                       <a
@@ -58,7 +58,7 @@ function ContactInfo() {
                 )}
               </div>
             </div>
-          )
+          );
         })}
       </div>
 
@@ -82,7 +82,7 @@ function ContactInfo() {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default ContactInfo
+export default ContactInfo;

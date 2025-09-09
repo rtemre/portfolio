@@ -1,4 +1,4 @@
-import { tools } from './constants'
+import { tools } from "./constants";
 function ToolsTechnologies() {
   return (
     <section className="py-20 bg-white">
@@ -16,7 +16,7 @@ function ToolsTechnologies() {
 
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {tools.map((tool) => {
-            const IconComponent = tool.icon
+            const IconComponent = tool.icon;
             return (
               <div key={tool.id} className="text-center">
                 <div
@@ -35,12 +35,12 @@ function ToolsTechnologies() {
                   ))}
                 </ul>
               </div>
-            )
+            );
           })}
         </div>
       </div>
     </section>
-  )
+  );
 }
 
-export default ToolsTechnologies
+export default ToolsTechnologies;

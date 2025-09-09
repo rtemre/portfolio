@@ -1,5 +1,5 @@
-import AnimatedProgressBar from '../AnimatedProgressBar'
-import { technicalSkills, softSkills } from './constants'
+import AnimatedProgressBar from "../AnimatedProgressBar";
+import { technicalSkills, softSkills } from "./constants";
 function SkillsCompetencies() {
   return (
     <section className="py-20 bg-surface">
@@ -75,7 +75,7 @@ function SkillsCompetencies() {
         </div>
       </div>
     </section>
-  )
+  );
 }
 
-export default SkillsCompetencies
+export default SkillsCompetencies;

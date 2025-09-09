@@ -1,4 +1,4 @@
-import { SearchIcon, ChevronDownIcon } from '../../assets/icons'
+import { SearchIcon, ChevronDownIcon } from "../../assets/icons";
 
 function WorkFilters() {
   return (
@@ -96,7 +96,7 @@ function WorkFilters() {
         </div>
       </div>
     </section>
-  )
+  );
 }
 
-export default WorkFilters
+export default WorkFilters;

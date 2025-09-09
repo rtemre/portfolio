@@ -32,7 +32,7 @@ function ResourcesCTA() {
         </p>
       </div>
     </section>
-  )
+  );
 }
 
-export default ResourcesCTA
+export default ResourcesCTA;

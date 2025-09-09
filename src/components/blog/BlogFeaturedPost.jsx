@@ -1,6 +1,6 @@
-import ArrowRightIcon from '../../assets/svgs/arrow-right'
-import TwitterIcon from '../../assets/svgs/twitter'
-import LinkedInIcon from '../../assets/svgs/linkedin'
+import ArrowRightIcon from "../../assets/svgs/arrow-right";
+import TwitterIcon from "../../assets/svgs/twitter";
+import LinkedInIcon from "../../assets/svgs/linkedin";
 
 function BlogFeaturedPost() {
   return (
@@ -17,7 +17,7 @@ function BlogFeaturedPost() {
 
         <article
           className="card overflow-hidden group cursor-pointer"
-          onClick={() => (window.location.href = '/case-study')}
+          onClick={() => (window.location.href = "/case-study")}
         >
           <div className="md:flex">
             <div className="md:w-1/2 relative overflow-hidden">
@@ -27,8 +27,8 @@ function BlogFeaturedPost() {
                 className="w-full h-64 md:h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 loading="lazy"
                 onError={(e) => {
-                  e.target.src = '/images/general-design-image.jpeg'
-                  e.target.onError = null
+                  e.target.src = "/images/general-design-image.jpeg";
+                  e.target.onError = null;
                 }}
               />
               <div className="absolute top-4 left-4">
@@ -79,7 +79,7 @@ function BlogFeaturedPost() {
         </article>
       </div>
     </section>
-  )
+  );
 }
 
-export default BlogFeaturedPost
+export default BlogFeaturedPost;

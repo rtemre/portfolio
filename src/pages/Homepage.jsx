@@ -1,10 +1,10 @@
-import { useEffect } from 'react';
-import Hero from '../components/Hero';
-import FeaturedWork from '../components/FeaturedWork';
-import Skills from '../components/Skills';
-import ClientLogos from '../components/ClientLogos';
-import BlogPreview from '../components/BlogPreview';
-import Newsletter from '../components/Newsletter';
+import { useEffect } from "react";
+import Hero from "../components/Hero";
+import FeaturedWork from "../components/FeaturedWork";
+import Skills from "../components/Skills";
+import ClientLogos from "../components/ClientLogos";
+import BlogPreview from "../components/BlogPreview";
+import Newsletter from "../components/Newsletter";
 
 function Homepage() {
   useEffect(() => {
@@ -13,18 +13,18 @@ function Homepage() {
       const target = e.target.closest('a[href^="#"]');
       if (target) {
         e.preventDefault();
-        const element = document.querySelector(target.getAttribute('href'));
+        const element = document.querySelector(target.getAttribute("href"));
         if (element) {
           element.scrollIntoView({
-            behavior: 'smooth',
-            block: 'start',
+            behavior: "smooth",
+            block: "start",
           });
         }
       }
     };
 
-    document.addEventListener('click', handleClick);
-    return () => document.removeEventListener('click', handleClick);
+    document.addEventListener("click", handleClick);
+    return () => document.removeEventListener("click", handleClick);
   }, []);
   return (
     <div>

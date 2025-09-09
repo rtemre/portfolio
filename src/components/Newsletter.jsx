@@ -1,16 +1,16 @@
-import { useState } from 'react'
+import { useState } from "react";
 
 function Newsletter() {
-  const [email, setEmail] = useState('')
-  const [isSubmitted, setIsSubmitted] = useState(false)
+  const [email, setEmail] = useState("");
+  const [isSubmitted, setIsSubmitted] = useState(false);
 
   const handleSubmit = (e) => {
-    e.preventDefault()
+    e.preventDefault();
     // Handle newsletter signup here
-    setIsSubmitted(true)
-    setEmail('')
+    setIsSubmitted(true);
+    setEmail("");
     // In a real app, you would send the email to your backend
-  }
+  };
 
   return (
     <section className="py-20 bg-primary text-white">
@@ -61,7 +61,7 @@ function Newsletter() {
         </p>
       </div>
     </section>
-  )
+  );
 }
 
-export default Newsletter
+export default Newsletter;

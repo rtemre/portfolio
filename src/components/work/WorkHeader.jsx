@@ -42,7 +42,7 @@ function WorkHeader() {
         </div>
       </div>
     </section>
-  )
+  );
 }
 
-export default WorkHeader
+export default WorkHeader;

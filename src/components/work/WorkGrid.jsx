@@ -1,5 +1,5 @@
-import SearchIcon from '../../assets/svgs/search'
-import { projects } from './constants'
+import SearchIcon from "../../assets/svgs/search";
+import { projects } from "./constants";
 function WorkGrid() {
   return (
     <section className="py-16 bg-white">
@@ -24,8 +24,8 @@ function WorkGrid() {
                   className={`w-full ${project.image.height} object-cover transition-transform duration-500 group-hover:scale-110`}
                   loading="lazy"
                   onError={(e) => {
-                    e.target.src = project.image.fallback
-                    e.target.onError = null
+                    e.target.src = project.image.fallback;
+                    e.target.onError = null;
                   }}
                 />
                 <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/20 transition-all duration-300"></div>
@@ -82,7 +82,7 @@ function WorkGrid() {
         </div>
       </div>
     </section>
-  )
+  );
 }
 
-export default WorkGrid
+export default WorkGrid;

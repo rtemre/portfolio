@@ -1,4 +1,4 @@
-function ChevronDownIcon({ className = 'w-4 h-4' }) {
+function ChevronDownIcon({ className = "w-4 h-4" }) {
   return (
     <svg
       className={className}
@@ -13,7 +13,7 @@ function ChevronDownIcon({ className = 'w-4 h-4' }) {
         d="M19 9l-7 7-7-7"
       />
     </svg>
-  )
+  );
 }
 
-export default ChevronDownIcon
+export default ChevronDownIcon;

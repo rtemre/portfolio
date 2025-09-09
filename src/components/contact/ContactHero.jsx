@@ -8,15 +8,15 @@ function ContactHero() {
           className="w-full h-full object-cover"
           loading="lazy"
           onError={(e) => {
-            e.target.src = '/images/general-design-image.jpeg'
-            e.target.onError = null
+            e.target.src = "/images/general-design-image.jpeg";
+            e.target.onError = null;
           }}
         />
       </div>
 
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
         <h1 className="text-hero font-playfair mb-6 animate-fade-in text-white">
-          Let us Create Something{' '}
+          Let us Create Something{" "}
           <span className="text-accent">Extraordinary</span>
         </h1>
         <p className="text-xl mb-8 max-w-2xl mx-auto opacity-90 animate-slide-up">
@@ -26,7 +26,7 @@ function ContactHero() {
         </p>
       </div>
     </section>
-  )
+  );
 }
 
-export default ContactHero
+export default ContactHero;

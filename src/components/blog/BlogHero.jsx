@@ -1,4 +1,4 @@
-import SearchIcon from '../../assets/svgs/search'
+import SearchIcon from "../../assets/svgs/search";
 
 function BlogHero() {
   return (
@@ -10,8 +10,8 @@ function BlogHero() {
           className="w-full h-full object-cover"
           loading="lazy"
           onError={(e) => {
-            e.target.src = '/images/general-design-image.jpeg'
-            e.target.onError = null
+            e.target.src = "/images/general-design-image.jpeg";
+            e.target.onError = null;
           }}
         />
       </div>
@@ -42,7 +42,7 @@ function BlogHero() {
         </div>
       </div>
     </section>
-  )
+  );
 }
 
-export default BlogHero
+export default BlogHero;

@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom";
 
 function ProcessCTA() {
   return (
@@ -28,7 +28,7 @@ function ProcessCTA() {
         </div>
       </div>
     </section>
-  )
+  );
 }
 
-export default ProcessCTA
+export default ProcessCTA;

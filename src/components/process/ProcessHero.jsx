@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom";
 
 function ProcessHero() {
   return (
@@ -10,8 +10,8 @@ function ProcessHero() {
           className="w-full h-full object-cover"
           loading="lazy"
           onError={(e) => {
-            e.target.src = '/images/general-design-image.jpeg'
-            e.target.onError = null
+            e.target.src = "/images/general-design-image.jpeg";
+            e.target.onError = null;
           }}
         />
       </div>
@@ -41,7 +41,7 @@ function ProcessHero() {
         </div>
       </div>
     </section>
-  )
+  );
 }
 
-export default ProcessHero
+export default ProcessHero;

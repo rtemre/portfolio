@@ -1,6 +1,6 @@
-import { Link } from 'react-router-dom'
-import ArrowRightIcon from '../assets/svgs/arrow-right'
-import { posts } from './constants.jsx'
+import { Link } from "react-router-dom";
+import ArrowRightIcon from "../assets/svgs/arrow-right";
+import { posts } from "./constants.jsx";
 
 function BlogPreview() {
   return (
@@ -29,7 +29,7 @@ function BlogPreview() {
                   className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
                   loading="lazy"
                   onError={(e) => {
-                    e.target.src = '/images/fallback-image.jpeg'
+                    e.target.src = "/images/fallback-image.jpeg";
                   }}
                 />
               </div>
@@ -55,7 +55,7 @@ function BlogPreview() {
         </div>
       </div>
     </section>
-  )
+  );
 }
 
-export default BlogPreview
+export default BlogPreview;

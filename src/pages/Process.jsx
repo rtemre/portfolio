@@ -3,7 +3,7 @@ import {
   ProcessOverview,
   ToolsTechnologies,
   ProcessCTA,
-} from '../components/process';
+} from "../components/process";
 
 function Process() {
   return (

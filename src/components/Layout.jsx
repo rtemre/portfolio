@@ -1,5 +1,5 @@
-import Nav from './Nav'
-import Footer from './Footer'
+import Nav from "./Nav";
+import Footer from "./Footer";
 
 function Layout({ children }) {
   return (
@@ -8,7 +8,7 @@ function Layout({ children }) {
       <main className="pt-20">{children}</main>
       <Footer />
     </div>
-  )
+  );
 }
 
-export default Layout
+export default Layout;
