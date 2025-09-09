@@ -3,10 +3,9 @@ export const articles = [
     id: 1,
     category: "design-process",
     image: {
-      src: "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      src: "/images/design-process-hero.jpeg",
       alt: "UX research methods",
-      fallback:
-        "https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3",
+      fallback: "/images/design-trends-showcase.jpeg",
     },
     badge: {
       text: "Design Process",
@@ -23,10 +22,9 @@ export const articles = [
     id: 2,
     category: "tools-resources",
     image: {
-      src: "https://images.pixabay.com/photo/2016/11/29/06/15/plans-1867745_1280.jpg",
+      src: "/images/design-process-hero.jpeg",
       alt: "Design tools comparison",
-      fallback:
-        "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      fallback: "/images/design-process-hero.jpeg",
     },
     badge: {
       text: "Tools & Resources",
@@ -43,10 +41,9 @@ export const articles = [
     id: 3,
     category: "case-studies",
     image: {
-      src: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2426&auto=format&fit=crop&ixlib=rb-4.0.3",
+      src: "/images/ecommerce-platform.jpeg",
       alt: "E-commerce redesign case study",
-      fallback:
-        "https://images.pixabay.com/photo/2016/11/29/06/15/plans-1867745_1280.jpg",
+      fallback: "/images/design-process-hero.jpeg",
     },
     badge: {
       text: "Case Study Deep-Dive",

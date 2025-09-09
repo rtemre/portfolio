@@ -52,10 +52,9 @@ export const phases = [
     isReversed: false,
     containerClass: "mb-16 md:mb-20",
     image: {
-      src: "https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      src: "/images/healthcare-brand-identity.jpeg",
       alt: "Discovery and strategy phase",
-      fallback:
-        "https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3",
+      fallback: "/images/contact-process-background.jpeg",
     },
     title: "Discovery & Strategy",
     description:
@@ -91,10 +90,9 @@ export const phases = [
     isReversed: true,
     containerClass: "mb-16 md:mb-20",
     image: {
-      src: "https://images.pixabay.com/photo/2016/11/29/06/15/plans-1867745_1280.jpg",
+      src: "/images/healthcare-brand-identity.jpeg",
       alt: "Planning and architecture phase",
-      fallback:
-        "https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      fallback: "/images/healthcare-brand-identity.jpeg",
     },
     title: "Planning & Architecture",
     description:
@@ -130,10 +128,9 @@ export const phases = [
     isReversed: false,
     containerClass: "mb-16 md:mb-20",
     image: {
-      src: "https://images.unsplash.com/photo-1558655146-9f40138edfeb?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3",
+      src: "/images/modern-web-design.jpeg",
       alt: "Design and iteration phase",
-      fallback:
-        "https://images.pixabay.com/photo/2016/11/29/06/15/plans-1867745_1280.jpg",
+      fallback: "/images/healthcare-brand-identity.jpeg",
     },
     title: "Design & Prototyping",
     description:
@@ -169,10 +166,9 @@ export const phases = [
     isReversed: true,
     containerClass: "mb-16 md:mb-20",
     image: {
-      src: "https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      src: "/images/typography-guide.jpeg",
       alt: "Development and implementation phase",
-      fallback:
-        "https://images.unsplash.com/photo-1558655146-9f40138edfeb?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3",
+      fallback: "/images/modern-web-design.jpeg",
     },
     title: "Development & Implementation",
     description:
@@ -208,10 +204,9 @@ export const phases = [
     isReversed: false,
     containerClass: "",
     image: {
-      src: "https://images.pixabay.com/photo/2015/02/05/08/21/marketing-626762_1280.jpg",
+      src: "/images/typography-guide.jpeg",
       alt: "Launch and optimization phase",
-      fallback:
-        "https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      fallback: "/images/typography-guide.jpeg",
     },
     title: "Launch & Optimization",
     description:

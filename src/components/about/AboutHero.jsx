@@ -9,13 +9,12 @@ function AboutHero() {
           <div className="relative">
             <div className="relative overflow-hidden rounded-2xl">
               <img
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3"
+                src="/images/professional-portrait-2.jpeg"
                 alt="Professional portrait"
                 className="w-full h-96 lg:h-[500px] object-cover"
                 loading="lazy"
                 onError={(e) => {
-                  e.target.src =
-                    "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2";
+                  e.target.src = "/images/professional-portrait-1.jpeg";
                   e.target.onError = null;
                 }}
               />

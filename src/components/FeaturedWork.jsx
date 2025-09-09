@@ -5,8 +5,7 @@ function FeaturedWork() {
   const projects = [
     {
       id: 1,
-      image:
-        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2426&auto=format&fit=crop&ixlib=rb-4.0.3",
+      image: "/images/ecommerce-platform.jpeg",
       title: "E-commerce Platform Redesign",
       description:
         "Complete UX overhaul resulting in 40% increase in conversion rates",
@@ -16,8 +15,7 @@ function FeaturedWork() {
     },
     {
       id: 2,
-      image:
-        "https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      image: "/images/healthcare-brand-identity.jpeg",
       title: "FinTech Mobile App",
       description: "User-centered design for complex financial workflows",
       client: "StartupXYZ • 2024",
@@ -26,8 +24,7 @@ function FeaturedWork() {
     },
     {
       id: 3,
-      image:
-        "https://images.pixabay.com/photo/2016/11/29/13/14/attractive-1869761_1280.jpg",
+      image: "/images/design-process-hero.jpeg",
       title: "Brand Identity System",
       description:
         "Complete rebrand including logo, guidelines, and digital assets",
@@ -37,8 +34,7 @@ function FeaturedWork() {
     },
     {
       id: 4,
-      image:
-        "https://images.unsplash.com/photo-1551650975-87deedd944c3?q=80&w=2874&auto=format&fit=crop&ixlib=rb-4.0.3",
+      image: "/images/analytics-dashboard.jpeg",
       title: "Analytics Dashboard",
       description: "Complex data visualization made intuitive and actionable",
       client: "DataCorp • 2024",
@@ -47,8 +43,7 @@ function FeaturedWork() {
     },
     {
       id: 5,
-      image:
-        "https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      image: "/images/typography-guide.jpeg",
       title: "Corporate Website Redesign",
       description: "Modern, accessible design with improved user journey",
       client: "Enterprise Inc • 2024",
@@ -57,8 +52,7 @@ function FeaturedWork() {
     },
     {
       id: 6,
-      image:
-        "https://images.pixabay.com/photo/2015/02/05/08/21/marketing-626762_1280.jpg",
+      image: "/images/design-process-hero.jpeg",
       title: "Digital Marketing Campaign",
       description:
         "Multi-channel campaign design with cohesive visual strategy",
@@ -96,8 +90,7 @@ function FeaturedWork() {
                   className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
                   loading="lazy"
                   onError={(e) => {
-                    e.target.src =
-                      "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2";
+                    e.target.src = "/images/fallback-image.jpeg";
                   }}
                 />
                 <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/20 transition-all duration-300"></div>

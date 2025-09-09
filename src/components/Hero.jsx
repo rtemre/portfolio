@@ -7,18 +7,15 @@ function Hero() {
 
   const slides = [
     {
-      image:
-        "https://images.unsplash.com/photo-1558655146-9f40138edfeb?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3",
+      image: "/images/modern-web-design.jpeg",
       alt: "Modern web design showcase",
     },
     {
-      image:
-        "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      image: "/images/general-design-image.jpeg",
       alt: "UX design process",
     },
     {
-      image:
-        "https://images.pixabay.com/photo/2016/11/29/06/15/plans-1867745_1280.jpg",
+      image: "/images/design-process-hero.jpeg",
       alt: "Brand strategy development",
     },
   ];
@@ -48,8 +45,7 @@ function Hero() {
               className="w-full h-full object-cover"
               loading="lazy"
               onError={(e) => {
-                e.target.src =
-                  "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2";
+                e.target.src = "/images/fallback-image.jpeg";
               }}
             />
             <div className="absolute inset-0 bg-primary/60"></div>

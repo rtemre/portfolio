@@ -5,10 +5,9 @@ export const projects = [
     industry: "tech",
     year: "2024",
     image: {
-      src: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2426&auto=format&fit=crop&ixlib=rb-4.0.3",
+      src: "/images/ecommerce-platform.jpeg",
       alt: "E-commerce platform redesign",
-      fallback:
-        "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      fallback: "/images/fallback-image.jpeg",
       height: "h-64",
     },
     hover: {
@@ -27,10 +26,9 @@ export const projects = [
     industry: "healthcare",
     year: "2024",
     image: {
-      src: "https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      src: "/images/healthcare-brand-identity.jpeg",
       alt: "Healthcare brand identity",
-      fallback:
-        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2426&auto=format&fit=crop&ixlib=rb-4.0.3",
+      fallback: "/images/ecommerce-platform.jpeg",
       height: "h-80",
     },
     hover: {
@@ -49,10 +47,9 @@ export const projects = [
     industry: "finance",
     year: "2024",
     image: {
-      src: "https://images.pixabay.com/photo/2016/11/29/13/14/attractive-1869761_1280.jpg",
+      src: "/images/healthcare-brand-identity.jpeg",
       alt: "FinTech mobile app",
-      fallback:
-        "https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      fallback: "/images/healthcare-brand-identity.jpeg",
       height: "h-64",
     },
     hover: {
@@ -70,10 +67,9 @@ export const projects = [
     industry: "ecommerce",
     year: "2023",
     image: {
-      src: "https://images.unsplash.com/photo-1551650975-87deedd944c3?q=80&w=2874&auto=format&fit=crop&ixlib=rb-4.0.3",
+      src: "/images/analytics-dashboard.jpeg",
       alt: "E-commerce dashboard",
-      fallback:
-        "https://images.pixabay.com/photo/2016/11/29/13/14/attractive-1869761_1280.jpg",
+      fallback: "/images/healthcare-brand-identity.jpeg",
       height: "h-72",
     },
     hover: {
@@ -91,10 +87,9 @@ export const projects = [
     industry: "nonprofit",
     year: "2023",
     image: {
-      src: "https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      src: "/images/typography-guide.jpeg",
       alt: "Non-profit website",
-      fallback:
-        "https://images.unsplash.com/photo-1551650975-87deedd944c3?q=80&w=2874&auto=format&fit=crop&ixlib=rb-4.0.3",
+      fallback: "/images/analytics-dashboard.jpeg",
       height: "h-64",
     },
     hover: {
@@ -112,10 +107,9 @@ export const projects = [
     industry: "education",
     year: "2023",
     image: {
-      src: "https://images.pixabay.com/photo/2015/02/05/08/21/marketing-626762_1280.jpg",
+      src: "/images/typography-guide.jpeg",
       alt: "Education platform branding",
-      fallback:
-        "https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      fallback: "/images/typography-guide.jpeg",
       height: "h-80",
     },
     hover: {
@@ -133,10 +127,9 @@ export const projects = [
     industry: "tech",
     year: "2022",
     image: {
-      src: "https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3",
+      src: "/images/design-trends-showcase.jpeg",
       alt: "SaaS platform design",
-      fallback:
-        "https://images.pixabay.com/photo/2015/02/05/08/21/marketing-626762_1280.jpg",
+      fallback: "/images/typography-guide.jpeg",
       height: "h-64",
     },
     hover: {
@@ -154,10 +147,9 @@ export const projects = [
     industry: "healthcare",
     year: "2022",
     image: {
-      src: "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      src: "/images/design-process-hero.jpeg",
       alt: "Healthcare app development",
-      fallback:
-        "https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3",
+      fallback: "/images/design-trends-showcase.jpeg",
       height: "h-72",
     },
     hover: {

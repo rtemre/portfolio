@@ -3,10 +3,9 @@ export const resources = [
     id: 1,
     category: "design-tools",
     image: {
-      src: "https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3",
+      src: "/images/design-trends-showcase.jpeg",
       alt: "UI Design Kit",
-      fallback:
-        "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      fallback: "/images/general-design-image.jpeg",
     },
     badge: {
       text: "Free",
@@ -26,10 +25,9 @@ export const resources = [
     id: 2,
     category: "research-tools",
     image: {
-      src: "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      src: "/images/design-process-hero.jpeg",
       alt: "UX Research Template",
-      fallback:
-        "https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3",
+      fallback: "/images/design-trends-showcase.jpeg",
     },
     badge: {
       text: "Free",
@@ -49,10 +47,9 @@ export const resources = [
     id: 3,
     category: "checklists",
     image: {
-      src: "https://images.pixabay.com/photo/2016/11/29/06/15/plans-1867745_1280.jpg",
+      src: "/images/design-process-hero.jpeg",
       alt: "Design Checklist",
-      fallback:
-        "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      fallback: "/images/design-process-hero.jpeg",
     },
     badge: {
       text: "Free",
@@ -72,10 +69,9 @@ export const resources = [
     id: 4,
     category: "tools",
     image: {
-      src: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2426&auto=format&fit=crop&ixlib=rb-4.0.3",
+      src: "/images/ecommerce-platform.jpeg",
       alt: "Color Palette Tool",
-      fallback:
-        "https://images.pixabay.com/photo/2016/11/29/06/15/plans-1867745_1280.jpg",
+      fallback: "/images/design-process-hero.jpeg",
     },
     badge: {
       text: "Tool",
@@ -96,10 +92,9 @@ export const resources = [
     id: 5,
     category: "guides",
     image: {
-      src: "https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      src: "/images/typography-guide.jpeg",
       alt: "Typography Guide",
-      fallback:
-        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2426&auto=format&fit=crop&ixlib=rb-4.0.3",
+      fallback: "/images/ecommerce-platform.jpeg",
     },
     badge: {
       text: "Free",
@@ -119,10 +114,9 @@ export const resources = [
     id: 6,
     category: "checklists",
     image: {
-      src: "https://images.pixabay.com/photo/2015/02/05/08/21/marketing-626762_1280.jpg",
+      src: "/images/typography-guide.jpeg",
       alt: "Accessibility Audit",
-      fallback:
-        "https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      fallback: "/images/typography-guide.jpeg",
     },
     badge: {
       text: "Free",

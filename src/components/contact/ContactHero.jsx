@@ -5,13 +5,12 @@ function ContactHero() {
     <section className="relative pt-32 pb-20 bg-gradient-to-br from-primary to-primary/80 text-white overflow-hidden">
       <div className="absolute inset-0 opacity-10">
         <img
-          src="https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3"
+          src="/images/contact-process-background.jpeg"
           alt="Contact us"
           className="w-full h-full object-cover"
           loading="lazy"
           onError={(e) => {
-            e.target.src =
-              "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2";
+            e.target.src = "/images/general-design-image.jpeg";
             e.target.onError = null;
           }}
         />

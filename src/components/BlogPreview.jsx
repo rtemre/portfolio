@@ -6,8 +6,7 @@ function BlogPreview() {
   const posts = [
     {
       id: 1,
-      image:
-        "https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3",
+      image: "/images/design-trends-showcase.jpeg",
       date: "January 15, 2025",
       title: "Design Trends Shaping 2025",
       excerpt:
@@ -16,8 +15,7 @@ function BlogPreview() {
     },
     {
       id: 2,
-      image:
-        "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      image: "/images/design-process-hero.jpeg",
       date: "January 10, 2025",
       title: "The Psychology of User Experience",
       excerpt:
@@ -26,8 +24,7 @@ function BlogPreview() {
     },
     {
       id: 3,
-      image:
-        "https://images.pixabay.com/photo/2016/11/29/06/15/plans-1867745_1280.jpg",
+      image: "/images/design-process-hero.jpeg",
       date: "January 5, 2025",
       title: "Building a Portfolio That Tells Stories",
       excerpt:
@@ -62,8 +59,7 @@ function BlogPreview() {
                   className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
                   loading="lazy"
                   onError={(e) => {
-                    e.target.src =
-                      "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2";
+                    e.target.src = "/images/fallback-image.jpeg";
                   }}
                 />
               </div>

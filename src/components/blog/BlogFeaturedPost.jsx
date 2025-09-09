@@ -23,13 +23,12 @@ function BlogFeaturedPost() {
           <div className="md:flex">
             <div className="md:w-1/2 relative overflow-hidden">
               <img
-                src="https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3"
+                src="/images/design-trends-showcase.jpeg"
                 alt="Design trends 2025"
                 className="w-full h-64 md:h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 loading="lazy"
                 onError={(e) => {
-                  e.target.src =
-                    "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2";
+                  e.target.src = "/images/general-design-image.jpeg";
                   e.target.onError = null;
                 }}
               />
