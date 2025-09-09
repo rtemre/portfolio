@@ -34,7 +34,7 @@ function ResourcesGrid() {
                 />
                 <div className="absolute top-4 left-4">
                   <span
-                    className={`px-3 py-1 ${resource.badge.color} text-white text-sm rounded-full`}
+                    className={`px-3 py-1 ${resource.badge.bgColor} text-white text-sm rounded-full`}
                   >
                     {resource.badge.text}
                   </span>
