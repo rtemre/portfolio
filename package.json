@@ -2,6 +2,7 @@
   "name": "portfolio_reimagined",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "main": "index.html",
   "dependencies": {
     "react": "^19.1.1",
