@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import ArrowRightIcon from "../../assets/svgs/arrow-right";
 import { articles } from "./constants";
 function BlogRecentArticles() {
@@ -65,9 +66,9 @@ function BlogRecentArticles() {
         </div>
 
         <div className="text-center mt-12">
-          <a href="/resources" className="btn-secondary text-lg px-8 py-4">
+          <Link to="/resources" className="btn-secondary text-lg px-8 py-4">
             View All Posts
-          </a>
+          </Link>
         </div>
       </div>
     </section>

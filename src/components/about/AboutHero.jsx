@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function AboutHero() {
   return (
@@ -43,9 +44,9 @@ function AboutHero() {
               creating meaningful user experiences.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 animate-scale-in">
-              <a href="/work" className="btn-primary">
+              <Link to="/work" className="btn-primary">
                 View My Work
-              </a>
+              </Link>
               <a href="#resume-download" className="btn-secondary">
                 Download Resume
               </a>
