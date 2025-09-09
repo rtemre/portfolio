@@ -18,7 +18,7 @@ function Home() {
       });
     }, 1000);
     return () => clearInterval(timer);
-  }, []);
+  }, [navigate]);
 
   const handleClick = () => {
     navigate("/home");

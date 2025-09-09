@@ -5,6 +5,7 @@ function AnimatedProgressBar({ percentage, color = "bg-accent", delay = 0 }) {
   const progressRef = useRef(null);
 
   useEffect(() => {
+    const node = progressRef.current;
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
@@ -16,13 +17,13 @@ function AnimatedProgressBar({ percentage, color = "bg-accent", delay = 0 }) {
       { threshold: 0.1 }
     );
 
-    if (progressRef.current) {
-      observer.observe(progressRef.current);
+    if (node) {
+      observer.observe(node);
     }
 
     return () => {
-      if (progressRef.current) {
-        observer.unobserve(progressRef.current);
+      if (node) {
+        observer.unobserve(node);
       }
     };
   }, [delay]);
