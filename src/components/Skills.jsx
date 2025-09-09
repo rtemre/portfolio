@@ -1,35 +1,9 @@
 import React, { useEffect, useRef, useState } from "react";
-import UxUiDesignIcon from "../assets/svgs/ux-ui-design";
-import FrontendDevelopmentIcon from "../assets/svgs/frontend-development";
-import BrandStrategyIcon from "../assets/svgs/brand-strategy";
+import { skills } from "./constants.jsx";
 
 function Skills() {
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef(null);
-
-  const skills = [
-    {
-      icon: <UxUiDesignIcon className="w-12 h-12 text-accent" />,
-      title: "UX/UI Design",
-      percentage: 95,
-      description:
-        "User-centered design with focus on accessibility and conversion optimization",
-    },
-    {
-      icon: <FrontendDevelopmentIcon className="w-12 h-12 text-success" />,
-      title: "Frontend Development",
-      percentage: 90,
-      description:
-        "Modern web technologies with performance and accessibility best practices",
-    },
-    {
-      icon: <BrandStrategyIcon className="w-12 h-12 text-warning" />,
-      title: "Brand Strategy",
-      percentage: 85,
-      description:
-        "Strategic thinking that aligns creative vision with business objectives",
-    },
-  ];
 
   useEffect(() => {
     const observer = new IntersectionObserver(

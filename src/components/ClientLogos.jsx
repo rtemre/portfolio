@@ -1,15 +1,7 @@
 import React from "react";
+import { clients } from "./constants.jsx";
 
 function ClientLogos() {
-  const clients = [
-    "TechCorp",
-    "StartupXYZ",
-    "DataCorp",
-    "Enterprise",
-    "Creative Co",
-    "Marketing Pro",
-  ];
-
   return (
     <section className="py-20 bg-white">
       <div className="max-w-6xl mx-auto px-6">

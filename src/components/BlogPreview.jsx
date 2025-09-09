@@ -1,38 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import ArrowRightIcon from "../assets/svgs/arrow-right";
+import { posts } from "./constants.jsx";
 
 function BlogPreview() {
-  const posts = [
-    {
-      id: 1,
-      image: "/images/design-trends-showcase.jpeg",
-      date: "January 15, 2025",
-      title: "Design Trends Shaping 2025",
-      excerpt:
-        "Exploring the intersection of AI, accessibility, and human-centered design in the coming year.",
-      link: "/blog",
-    },
-    {
-      id: 2,
-      image: "/images/design-process-hero.jpeg",
-      date: "January 10, 2025",
-      title: "The Psychology of User Experience",
-      excerpt:
-        "How cognitive biases and psychological principles can inform better design decisions.",
-      link: "/blog",
-    },
-    {
-      id: 3,
-      image: "/images/design-process-hero.jpeg",
-      date: "January 5, 2025",
-      title: "Building a Portfolio That Tells Stories",
-      excerpt:
-        "Moving beyond galleries to create portfolios that demonstrate process and thinking.",
-      link: "/blog",
-    },
-  ];
-
   return (
     <section className="py-20 bg-surface">
       <div className="max-w-6xl mx-auto px-6">

@@ -1,24 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import ChevronDownIcon from "../assets/svgs/chevron-down";
+import { slides } from "./constants.jsx";
 
 function Hero() {
   const [currentSlide, setCurrentSlide] = useState(0);
-
-  const slides = [
-    {
-      image: "/images/modern-web-design.jpeg",
-      alt: "Modern web design showcase",
-    },
-    {
-      image: "/images/general-design-image.jpeg",
-      alt: "UX design process",
-    },
-    {
-      image: "/images/design-process-hero.jpeg",
-      alt: "Brand strategy development",
-    },
-  ];
 
   useEffect(() => {
     const timer = setInterval(() => {

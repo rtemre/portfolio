@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { HamburgerIcon, ChevronDownIcon } from "../assets/icons";
+import { routes } from "./constants.jsx";
 
 function Nav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,14 +16,6 @@ function Nav() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-  const routes = [
-    { path: "/", label: "Home" },
-    { path: "/work", label: "Work" },
-    { path: "/about", label: "About" },
-    { path: "/process", label: "Process" },
-    { path: "/blog", label: "Blog" },
-    { path: "/contact", label: "Contact" },
-  ];
 
   const isActive = (path) => {
     if (path === "/") {

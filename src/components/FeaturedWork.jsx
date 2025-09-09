@@ -1,67 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { projects } from "./constants.jsx";
 
 function FeaturedWork() {
-  const projects = [
-    {
-      id: 1,
-      image: "/images/ecommerce-platform.jpeg",
-      title: "E-commerce Platform Redesign",
-      description:
-        "Complete UX overhaul resulting in 40% increase in conversion rates",
-      client: "TechCorp • 2024",
-      tags: ["UX/UI Design", "Frontend Dev"],
-      link: "/work",
-    },
-    {
-      id: 2,
-      image: "/images/healthcare-brand-identity.jpeg",
-      title: "FinTech Mobile App",
-      description: "User-centered design for complex financial workflows",
-      client: "StartupXYZ • 2024",
-      tags: ["Mobile Design", "User Research"],
-      link: "/work",
-    },
-    {
-      id: 3,
-      image: "/images/design-process-hero.jpeg",
-      title: "Brand Identity System",
-      description:
-        "Complete rebrand including logo, guidelines, and digital assets",
-      client: "Creative Agency • 2024",
-      tags: ["Brand Strategy", "Visual Identity"],
-      link: "/work",
-    },
-    {
-      id: 4,
-      image: "/images/analytics-dashboard.jpeg",
-      title: "Analytics Dashboard",
-      description: "Complex data visualization made intuitive and actionable",
-      client: "DataCorp • 2024",
-      tags: ["Data Viz", "Dashboard Design"],
-      link: "/work",
-    },
-    {
-      id: 5,
-      image: "/images/typography-guide.jpeg",
-      title: "Corporate Website Redesign",
-      description: "Modern, accessible design with improved user journey",
-      client: "Enterprise Inc • 2024",
-      tags: ["Web Design", "Accessibility"],
-      link: "/work",
-    },
-    {
-      id: 6,
-      image: "/images/design-process-hero.jpeg",
-      title: "Digital Marketing Campaign",
-      description:
-        "Multi-channel campaign design with cohesive visual strategy",
-      client: "Marketing Pro • 2024",
-      tags: ["Campaign Design", "Visual Strategy"],
-      link: "/work",
-    },
-  ];
-
   return (
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-6">
