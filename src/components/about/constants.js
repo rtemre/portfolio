@@ -217,8 +217,8 @@ export const heroConstants = {
     downloadResume: "Download Resume",
   },
   images: {
-    primary: "/images/professional-portrait-2.jpeg",
-    fallback: "/images/professional-portrait-1.jpeg",
+    primary: "/images/professional-portrait-2.webp",
+    fallback: "/images/professional-portrait-1.webp",
     alt: "Professional portrait",
   },
 };

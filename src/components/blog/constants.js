@@ -3,9 +3,9 @@ export const articles = [
     id: 1,
     category: "design-process",
     image: {
-      src: "/images/design-process-hero.jpeg",
+      src: "/images/design-process-hero.webp",
       alt: "UX research methods",
-      fallback: "/images/design-trends-showcase.jpeg",
+      fallback: "/images/design-trends-showcase.webp",
     },
     badge: {
       text: "Design Process",
@@ -22,9 +22,9 @@ export const articles = [
     id: 2,
     category: "tools-resources",
     image: {
-      src: "/images/design-process-hero.jpeg",
+      src: "/images/design-process-hero.webp",
       alt: "Design tools comparison",
-      fallback: "/images/design-process-hero.jpeg",
+      fallback: "/images/design-process-hero.webp",
     },
     badge: {
       text: "Tools & Resources",
@@ -41,9 +41,9 @@ export const articles = [
     id: 3,
     category: "case-studies",
     image: {
-      src: "/images/ecommerce-platform.jpeg",
+      src: "/images/ecommerce-platform.webp",
       alt: "E-commerce redesign case study",
-      fallback: "/images/design-process-hero.jpeg",
+      fallback: "/images/design-process-hero.webp",
     },
     badge: {
       text: "Case Study Deep-Dive",

@@ -29,7 +29,7 @@ function BlogPreview() {
                   className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
                   loading="lazy"
                   onError={(e) => {
-                    e.target.src = "/images/fallback-image.jpeg";
+                    e.target.src = "/images/fallback-image.webp";
                   }}
                 />
               </div>

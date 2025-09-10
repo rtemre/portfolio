@@ -31,7 +31,7 @@ function Hero() {
               className="w-full h-full object-cover"
               loading="lazy"
               onError={(e) => {
-                e.target.src = "/images/fallback-image.jpeg";
+                e.target.src = "/images/fallback-image.webp";
               }}
             />
             <div className="absolute inset-0 bg-primary/60"></div>

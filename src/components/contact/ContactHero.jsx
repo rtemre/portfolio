@@ -3,12 +3,12 @@ function ContactHero() {
     <section className="relative pt-32 pb-20 bg-gradient-to-br from-primary to-primary/80 text-white overflow-hidden">
       <div className="absolute inset-0 opacity-10">
         <img
-          src="/images/contact-process-background.jpeg"
+          src="/images/contact-process-background.webp"
           alt="Contact us"
           className="w-full h-full object-cover"
           loading="lazy"
           onError={(e) => {
-            e.target.src = "/images/general-design-image.jpeg";
+            e.target.src = "/images/general-design-image.webp";
             e.target.onError = null;
           }}
         />

@@ -5,9 +5,9 @@ export const projects = [
     industry: "tech",
     year: "2024",
     image: {
-      src: "/images/ecommerce-platform.jpeg",
+      src: "/images/ecommerce-platform.webp",
       alt: "E-commerce platform redesign",
-      fallback: "/images/fallback-image.jpeg",
+      fallback: "/images/fallback-image.webp",
       height: "h-64",
     },
     hover: {
@@ -26,9 +26,9 @@ export const projects = [
     industry: "healthcare",
     year: "2024",
     image: {
-      src: "/images/healthcare-brand-identity.jpeg",
+      src: "/images/healthcare-brand-identity.webp",
       alt: "Healthcare brand identity",
-      fallback: "/images/ecommerce-platform.jpeg",
+      fallback: "/images/ecommerce-platform.webp",
       height: "h-80",
     },
     hover: {
@@ -47,9 +47,9 @@ export const projects = [
     industry: "finance",
     year: "2024",
     image: {
-      src: "/images/healthcare-brand-identity.jpeg",
+      src: "/images/healthcare-brand-identity.webp",
       alt: "FinTech mobile app",
-      fallback: "/images/healthcare-brand-identity.jpeg",
+      fallback: "/images/healthcare-brand-identity.webp",
       height: "h-64",
     },
     hover: {
@@ -67,9 +67,9 @@ export const projects = [
     industry: "ecommerce",
     year: "2023",
     image: {
-      src: "/images/analytics-dashboard.jpeg",
+      src: "/images/analytics-dashboard.webp",
       alt: "E-commerce dashboard",
-      fallback: "/images/healthcare-brand-identity.jpeg",
+      fallback: "/images/healthcare-brand-identity.webp",
       height: "h-72",
     },
     hover: {
@@ -87,9 +87,9 @@ export const projects = [
     industry: "nonprofit",
     year: "2023",
     image: {
-      src: "/images/typography-guide.jpeg",
+      src: "/images/typography-guide.webp",
       alt: "Non-profit website",
-      fallback: "/images/analytics-dashboard.jpeg",
+      fallback: "/images/analytics-dashboard.webp",
       height: "h-64",
     },
     hover: {
@@ -107,9 +107,9 @@ export const projects = [
     industry: "education",
     year: "2023",
     image: {
-      src: "/images/typography-guide.jpeg",
+      src: "/images/typography-guide.webp",
       alt: "Education platform branding",
-      fallback: "/images/typography-guide.jpeg",
+      fallback: "/images/typography-guide.webp",
       height: "h-80",
     },
     hover: {
@@ -127,9 +127,9 @@ export const projects = [
     industry: "tech",
     year: "2022",
     image: {
-      src: "/images/design-trends-showcase.jpeg",
+      src: "/images/design-trends-showcase.webp",
       alt: "SaaS platform design",
-      fallback: "/images/typography-guide.jpeg",
+      fallback: "/images/typography-guide.webp",
       height: "h-64",
     },
     hover: {
@@ -147,9 +147,9 @@ export const projects = [
     industry: "healthcare",
     year: "2022",
     image: {
-      src: "/images/design-process-hero.jpeg",
+      src: "/images/design-process-hero.webp",
       alt: "Healthcare app development",
-      fallback: "/images/design-trends-showcase.jpeg",
+      fallback: "/images/design-trends-showcase.webp",
       height: "h-72",
     },
     hover: {

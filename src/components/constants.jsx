@@ -20,7 +20,7 @@ export const clients = [
 export const posts = [
   {
     id: 1,
-    image: "/images/design-trends-showcase.jpeg",
+    image: "/images/design-trends-showcase.webp",
     date: "January 15, 2025",
     title: "Design Trends Shaping 2025",
     excerpt:
@@ -29,7 +29,7 @@ export const posts = [
   },
   {
     id: 2,
-    image: "/images/design-process-hero.jpeg",
+    image: "/images/design-process-hero.webp",
     date: "January 10, 2025",
     title: "The Psychology of User Experience",
     excerpt:
@@ -38,7 +38,7 @@ export const posts = [
   },
   {
     id: 3,
-    image: "/images/design-process-hero.jpeg",
+    image: "/images/design-process-hero.webp",
     date: "January 5, 2025",
     title: "Building a Portfolio That Tells Stories",
     excerpt:
@@ -50,7 +50,7 @@ export const posts = [
 export const projects = [
   {
     id: 1,
-    image: "/images/ecommerce-platform.jpeg",
+    image: "/images/ecommerce-platform.webp",
     title: "E-commerce Platform Redesign",
     description:
       "Complete UX overhaul resulting in 40% increase in conversion rates",
@@ -60,7 +60,7 @@ export const projects = [
   },
   {
     id: 2,
-    image: "/images/healthcare-brand-identity.jpeg",
+    image: "/images/healthcare-brand-identity.webp",
     title: "FinTech Mobile App",
     description: "User-centered design for complex financial workflows",
     client: "StartupXYZ • 2024",
@@ -69,7 +69,7 @@ export const projects = [
   },
   {
     id: 3,
-    image: "/images/design-process-hero.jpeg",
+    image: "/images/design-process-hero.webp",
     title: "Brand Identity System",
     description:
       "Complete rebrand including logo, guidelines, and digital assets",
@@ -79,7 +79,7 @@ export const projects = [
   },
   {
     id: 4,
-    image: "/images/analytics-dashboard.jpeg",
+    image: "/images/analytics-dashboard.webp",
     title: "Analytics Dashboard",
     description: "Complex data visualization made intuitive and actionable",
     client: "DataCorp • 2024",
@@ -88,7 +88,7 @@ export const projects = [
   },
   {
     id: 5,
-    image: "/images/typography-guide.jpeg",
+    image: "/images/typography-guide.webp",
     title: "Corporate Website Redesign",
     description: "Modern, accessible design with improved user journey",
     client: "Enterprise Inc • 2024",
@@ -97,7 +97,7 @@ export const projects = [
   },
   {
     id: 6,
-    image: "/images/design-process-hero.jpeg",
+    image: "/images/design-process-hero.webp",
     title: "Digital Marketing Campaign",
     description: "Multi-channel campaign design with cohesive visual strategy",
     client: "Marketing Pro • 2024",
@@ -108,15 +108,15 @@ export const projects = [
 
 export const slides = [
   {
-    image: "/images/modern-web-design.jpeg",
+    image: "/images/modern-web-design.webp",
     alt: "Modern web design showcase",
   },
   {
-    image: "/images/general-design-image.jpeg",
+    image: "/images/general-design-image.webp",
     alt: "UX design process",
   },
   {
-    image: "/images/design-process-hero.jpeg",
+    image: "/images/design-process-hero.webp",
     alt: "Brand strategy development",
   },
 ];

@@ -54,9 +54,9 @@ export const phases = [
     isReversed: false,
     containerClass: "mb-16 md:mb-20",
     image: {
-      src: "/images/healthcare-brand-identity.jpeg",
+      src: "/images/healthcare-brand-identity.webp",
       alt: "Discovery and strategy phase",
-      fallback: "/images/contact-process-background.jpeg",
+      fallback: "/images/contact-process-background.webp",
     },
     title: "Discovery & Strategy",
     description:
@@ -92,9 +92,9 @@ export const phases = [
     isReversed: true,
     containerClass: "mb-16 md:mb-20",
     image: {
-      src: "/images/healthcare-brand-identity.jpeg",
+      src: "/images/healthcare-brand-identity.webp",
       alt: "Planning and architecture phase",
-      fallback: "/images/healthcare-brand-identity.jpeg",
+      fallback: "/images/healthcare-brand-identity.webp",
     },
     title: "Planning & Architecture",
     description:
@@ -130,9 +130,9 @@ export const phases = [
     isReversed: false,
     containerClass: "mb-16 md:mb-20",
     image: {
-      src: "/images/modern-web-design.jpeg",
+      src: "/images/modern-web-design.webp",
       alt: "Design and iteration phase",
-      fallback: "/images/healthcare-brand-identity.jpeg",
+      fallback: "/images/healthcare-brand-identity.webp",
     },
     title: "Design & Prototyping",
     description:
@@ -168,9 +168,9 @@ export const phases = [
     isReversed: true,
     containerClass: "mb-16 md:mb-20",
     image: {
-      src: "/images/typography-guide.jpeg",
+      src: "/images/typography-guide.webp",
       alt: "Development and implementation phase",
-      fallback: "/images/modern-web-design.jpeg",
+      fallback: "/images/modern-web-design.webp",
     },
     title: "Development & Implementation",
     description:
@@ -206,9 +206,9 @@ export const phases = [
     isReversed: false,
     containerClass: "",
     image: {
-      src: "/images/typography-guide.jpeg",
+      src: "/images/typography-guide.webp",
       alt: "Launch and optimization phase",
-      fallback: "/images/typography-guide.jpeg",
+      fallback: "/images/typography-guide.webp",
     },
     title: "Launch & Optimization",
     description:

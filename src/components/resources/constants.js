@@ -3,9 +3,9 @@ export const resources = [
     id: 1,
     category: "design-tools",
     image: {
-      src: "/images/design-trends-showcase.jpeg",
+      src: "/images/design-trends-showcase.webp",
       alt: "UI Design Kit",
-      fallback: "/images/general-design-image.jpeg",
+      fallback: "/images/general-design-image.webp",
     },
     badge: {
       text: "Free",
@@ -25,9 +25,9 @@ export const resources = [
     id: 2,
     category: "research-tools",
     image: {
-      src: "/images/design-process-hero.jpeg",
+      src: "/images/design-process-hero.webp",
       alt: "UX Research Template",
-      fallback: "/images/design-trends-showcase.jpeg",
+      fallback: "/images/design-trends-showcase.webp",
     },
     badge: {
       text: "Free",
@@ -47,9 +47,9 @@ export const resources = [
     id: 3,
     category: "checklists",
     image: {
-      src: "/images/design-process-hero.jpeg",
+      src: "/images/design-process-hero.webp",
       alt: "Design Checklist",
-      fallback: "/images/design-process-hero.jpeg",
+      fallback: "/images/design-process-hero.webp",
     },
     badge: {
       text: "Free",
@@ -69,9 +69,9 @@ export const resources = [
     id: 4,
     category: "tools",
     image: {
-      src: "/images/ecommerce-platform.jpeg",
+      src: "/images/ecommerce-platform.webp",
       alt: "Color Palette Tool",
-      fallback: "/images/design-process-hero.jpeg",
+      fallback: "/images/design-process-hero.webp",
     },
     badge: {
       text: "Tool",
@@ -92,9 +92,9 @@ export const resources = [
     id: 5,
     category: "guides",
     image: {
-      src: "/images/typography-guide.jpeg",
+      src: "/images/typography-guide.webp",
       alt: "Typography Guide",
-      fallback: "/images/ecommerce-platform.jpeg",
+      fallback: "/images/ecommerce-platform.webp",
     },
     badge: {
       text: "Free",
@@ -114,9 +114,9 @@ export const resources = [
     id: 6,
     category: "checklists",
     image: {
-      src: "/images/typography-guide.jpeg",
+      src: "/images/typography-guide.webp",
       alt: "Accessibility Audit",
-      fallback: "/images/typography-guide.jpeg",
+      fallback: "/images/typography-guide.webp",
     },
     badge: {
       text: "Free",

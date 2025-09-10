@@ -24,12 +24,12 @@ function BlogFeaturedPost() {
           <div className="md:flex">
             <div className="md:w-1/2 relative overflow-hidden">
               <img
-                src="/images/design-trends-showcase.jpeg"
+                src="/images/design-trends-showcase.webp"
                 alt="Design trends 2025"
                 className="w-full h-64 md:h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 loading="lazy"
                 onError={(e) => {
-                  e.target.src = "/images/general-design-image.jpeg";
+                  e.target.src = "/images/general-design-image.webp";
                   e.target.onError = null;
                 }}
               />
