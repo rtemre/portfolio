@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { heroConstants } from "./constants";
 
 function AboutHero() {
   return (
@@ -9,12 +10,12 @@ function AboutHero() {
           <div className="relative">
             <div className="relative overflow-hidden rounded-2xl">
               <img
-                src="/images/professional-portrait-2.jpeg"
-                alt="Professional portrait"
+                src={heroConstants.images.primary}
+                alt={heroConstants.images.alt}
                 className="w-full h-96 lg:h-[500px] object-cover"
                 loading="lazy"
                 onError={(e) => {
-                  e.target.src = "/images/professional-portrait-1.jpeg";
+                  e.target.src = heroConstants.images.fallback;
                   e.target.onError = null;
                 }}
               />
@@ -28,26 +29,21 @@ function AboutHero() {
           {/* Personal Statement */}
           <div className="space-y-6">
             <h1 className="text-hero font-playfair text-primary animate-fade-in">
-              Hello, I am <span className="text-accent">Alex</span>
+              Hello, I am{" "}
+              <span className="text-accent">{heroConstants.name}</span>
             </h1>
             <p className="text-xl text-secondary leading-relaxed animate-slide-up">
-              A creative problem-solver who believes that great design is
-              invisible until it is extraordinary. I specialize in crafting
-              digital experiences that seamlessly blend aesthetic excellence
-              with strategic thinking.
+              {heroConstants.personalStatements[0]}
             </p>
             <p className="text-lg text-secondary leading-relaxed animate-slide-up">
-              My approach balances collaborative partnership with technical
-              precision, demonstrating that beautiful design and flawless
-              functionality are not mutually exclusive but essential partners in
-              creating meaningful user experiences.
+              {heroConstants.personalStatements[1]}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 animate-scale-in">
               <Link to="/work" className="btn-primary">
-                View My Work
+                {heroConstants.buttonTexts.viewWork}
               </Link>
               <a href="#resume-download" className="btn-secondary">
-                Download Resume
+                {heroConstants.buttonTexts.downloadResume}
               </a>
             </div>
           </div>

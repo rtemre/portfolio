@@ -200,3 +200,21 @@ export const philosophyItems = [
       "Scalable design systems ensure consistency while allowing for creative expression. Structure enables innovation, not restricts it.",
   },
 ];
+
+// Hero section constants
+export const heroConstants = {
+  name: "Alex",
+  personalStatements: [
+    "A creative problem-solver who believes that great design is invisible until it is extraordinary. I specialize in crafting digital experiences that seamlessly blend aesthetic excellence with strategic thinking.",
+    "My approach balances collaborative partnership with technical precision, demonstrating that beautiful design and flawless functionality are not mutually exclusive but essential partners in creating meaningful user experiences.",
+  ],
+  buttonTexts: {
+    viewWork: "View My Work",
+    downloadResume: "Download Resume",
+  },
+  images: {
+    primary: "/images/professional-portrait-2.jpeg",
+    fallback: "/images/professional-portrait-1.jpeg",
+    alt: "Professional portrait",
+  },
+};
