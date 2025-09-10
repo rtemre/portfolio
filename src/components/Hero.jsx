@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import ChevronDownIcon from "../assets/svgs/chevron-down";
-import { slides } from "./constants.jsx";
+import { ChevronDownIcon } from "../assets/svgIcons";
+import { slides } from "./constants";
 
 function Hero() {
   const [currentSlide, setCurrentSlide] = useState(0);

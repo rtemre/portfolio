@@ -1,7 +1,9 @@
-import MailIcon from "../../assets/svgs/mail";
-import PhoneIcon from "../../assets/svgs/phone";
-import MapPinIcon from "../../assets/svgs/map-pin";
-import LinkIcon from "../../assets/svgs/link";
+import {
+  MailIcon,
+  PhoneIcon,
+  MapPinIcon,
+  LinkIcon,
+} from "../../assets/svgIcons";
 
 export const contactInfo = [
   {

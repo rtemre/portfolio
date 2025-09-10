@@ -1,7 +1,9 @@
-import ChartBarIcon from "../../assets/svgs/chart-bar";
-import UxUiDesignIcon from "../../assets/svgs/ux-ui-design";
-import FrontendDevelopmentIcon from "../../assets/svgs/frontend-development";
-import CollaborativeIcon from "../../assets/svgs/collaborative";
+import {
+  ChartBarIcon,
+  UxUiDesignIcon,
+  FrontendDevelopmentIcon,
+  CollaborativeIcon,
+} from "../../assets/svgIcons";
 
 export const tools = [
   {

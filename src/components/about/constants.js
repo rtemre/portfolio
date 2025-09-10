@@ -133,9 +133,11 @@ export const paragraphs = [
   "Today, I bring this psychological insight to every project, ensuring that aesthetic decisions are grounded in user research and that every interaction serves a purpose in the broader user journey.",
 ];
 
-import GraduationCapIcon from "../../assets/svgs/graduation-cap";
-import CheckCircleIcon from "../../assets/svgs/check-circle";
-import BookOpenIcon from "../../assets/svgs/book-open";
+import {
+  GraduationCapIcon,
+  CheckCircleIcon,
+  BookOpenIcon,
+} from "../../assets/svgIcons";
 
 export const educationItems = [
   {
@@ -167,9 +169,11 @@ export const educationItems = [
   },
 ];
 
-import HumanCenteredIcon from "../../assets/svgs/human-centered";
-import CollaborativeIcon from "../../assets/svgs/collaborative";
-import SystematicIcon from "../../assets/svgs/systematic";
+import {
+  HumanCenteredIcon,
+  CollaborativeIcon,
+  SystematicIcon,
+} from "../../assets/svgIcons";
 
 export const philosophyItems = [
   {

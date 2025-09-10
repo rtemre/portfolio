@@ -1,4 +1,4 @@
-import SearchIcon from "../../assets/svgs/search";
+import { SearchIcon } from "../../assets/svgIcons";
 
 function BlogHero() {
   return (

@@ -1,6 +1,8 @@
-import ArrowRightIcon from "../../assets/svgs/arrow-right";
-import TwitterIcon from "../../assets/svgs/twitter";
-import LinkedInIcon from "../../assets/svgs/linkedin";
+import {
+  ArrowRightIcon,
+  TwitterIcon,
+  LinkedInIcon,
+} from "../../assets/svgIcons";
 
 function BlogFeaturedPost() {
   return (

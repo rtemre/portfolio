@@ -1,4 +1,4 @@
-import { SearchIcon, ChevronDownIcon } from "../../assets/icons";
+import { SearchIcon, ChevronDownIcon } from "../../assets/svgIcons";
 
 function WorkFilters() {
   return (

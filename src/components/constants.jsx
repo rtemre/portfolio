@@ -1,10 +1,12 @@
-import UxUiDesignIcon from "../assets/svgs/ux-ui-design";
-import FrontendDevelopmentIcon from "../assets/svgs/frontend-development";
-import BrandStrategyIcon from "../assets/svgs/brand-strategy";
-import TwitterIcon from "../assets/svgs/twitter";
-import LinkedInIcon from "../assets/svgs/linkedin";
-import InstagramIcon from "../assets/svgs/instagram";
-import PinterestIcon from "../assets/svgs/pinterest";
+import {
+  UxUiDesignIcon,
+  FrontendDevelopmentIcon,
+  BrandStrategyIcon,
+  TwitterIcon,
+  LinkedInIcon,
+  InstagramIcon,
+  PinterestIcon,
+} from "../assets/svgIcons";
 
 export const clients = [
   "TechCorp",

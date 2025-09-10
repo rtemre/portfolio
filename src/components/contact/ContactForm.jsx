@@ -1,4 +1,4 @@
-import ChevronDownIcon from "../../assets/icons/ChevronDownIcon";
+import { ChevronDownIcon } from "../../assets/svgIcons";
 
 function ContactForm() {
   return (

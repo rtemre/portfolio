@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import ArrowRightIcon from "../assets/svgs/arrow-right";
-import { posts } from "./constants.jsx";
+import { ArrowRightIcon } from "../assets/svgIcons";
+import { posts } from "./constants";
 
 function BlogPreview() {
   return (

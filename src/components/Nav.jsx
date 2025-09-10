@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { HamburgerIcon } from "../assets/icons";
-import { routes } from "./constants.jsx";
+import { HamburgerIcon } from "../assets/svgIcons";
+import { routes } from "./constants";
 
 function Nav() {
   const [isOpen, setIsOpen] = useState(false);

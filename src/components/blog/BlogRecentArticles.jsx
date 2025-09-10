@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import ArrowRightIcon from "../../assets/svgs/arrow-right";
+import { ArrowRightIcon } from "../../assets/svgIcons";
 import { articles } from "./constants";
 function BlogRecentArticles() {
   return (

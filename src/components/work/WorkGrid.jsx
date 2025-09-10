@@ -1,4 +1,4 @@
-import SearchIcon from "../../assets/svgs/search";
+import { SearchIcon } from "../../assets/svgIcons";
 import { projects } from "./constants";
 function WorkGrid() {
   return (

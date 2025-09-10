@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import ArrowRightIcon from "../assets/svgs/arrow-right";
+import { ArrowRightIcon } from "../assets/svgIcons";
 
 function Home() {
   const [countdown, setCountdown] = useState(5);

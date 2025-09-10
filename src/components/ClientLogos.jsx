@@ -1,4 +1,4 @@
-import { clients } from "./constants.jsx";
+import { clients } from "./constants";
 
 function ClientLogos() {
   return (

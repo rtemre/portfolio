@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { skills } from "./constants.jsx";
+import { skills } from "./constants";
 
 function Skills() {
   const [isVisible, setIsVisible] = useState(false);
